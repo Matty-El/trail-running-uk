@@ -15,6 +15,37 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --------------------------- NAVIGATION - IF REQUIRED */
 
+/* nav bar  */
+
+.navbar {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: grey;
+   }
+
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "Anton", sans-serif;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    color: #000000;
+    background-color: #000000;
+    z-index: 1;
+}
+
+button.navbar-toggler {
+    float: left;
+}
+
+
 
 /* --------------------------- HERO IMAGE AND SECTION */
 
@@ -33,17 +64,6 @@ h1, h2, h3, h4, h5, h6 {
 #hero-container {
   padding: 0;
 }
-
-/* #tagline {
-    font-family: "Anton", sans-serif;
-    font-size: 22px;
-    color: #000000;
-    position: relative;
-    text-align: center;
-    z-index: 1;
-    top: 60%;
-    left: 150px;
-}*/
 
 
 /* --------------------------- WHY TRAIL RUNNING SECTION */
@@ -81,6 +101,17 @@ h1, h2, h3, h4, h5, h6 {
 #map-container {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+#map-buttons {
+    margin-top: 50px;
+}
+
+#map {
+    width: 75%;
+    min-height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 /* --------------------------- CONTACT - NEWSLETTER SECTION */
