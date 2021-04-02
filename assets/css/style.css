@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* --------------------------- FONTS */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #000000;
+    /*color: #4B5657;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Anton", sans-serif;
+}
+
+
+/* --------------------------- NAVIGATION - IF REQUIRED */
+
+
+/* --------------------------- HERO IMAGE AND SECTION */
+
+.hero-section {
+    background: url("../images/topo-uk.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+#hero-container {
+  padding: 0;
+}
+
+/* #tagline {
+    font-family: "Anton", sans-serif;
+    font-size: 22px;
+    color: #000000;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    top: 60%;
+    left: 150px;
+}*/
+
+
+/* --------------------------- WHY TRAIL RUNNING SECTION */
+
+.trail-running-section {
+  background: url("../images/home-hero.jpeg") no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#trail-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* --------------------------- MAP SECTION */
+
+.map-section {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#map-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* --------------------------- CONTACT - NEWSLETTER SECTION */
+
+.newsletter-section {
+    background-color: grey;
+    text-align: center;
+    position: relative;
+    height: 300px;
+}
+
+
+
+/* --------------------------- FOOTER */
+
+footer {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.copyright {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    padding: 50px 20px 40px 20px;
+    margin: 0;
+}
+
+.copyright i {
+    color: #FFFFFF;
+}
+
+.fa-copyright {
+    pointer-events: none;
+}
+
+.social-media {
+    text-align: center;
+    padding: 20px 0 30px 0;
+    margin: 0;
+}
+
+.social-media li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.social-media i {
+    font-size: 28px;
+    color: #FFFFFF;
+    padding-top: 20px
+}
+
+@media all and (max-width: 768px) {
+    footer {
+        justify-content: space-around;
+    }
+}
