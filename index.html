@@ -12,6 +12,8 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
         type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Trail Running UK</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
@@ -42,8 +44,8 @@
                 </nav>
                 <div class="row container">
                     <div class="align-self-center col-6 offset-md-1">
-                        <h1>Trail Running in the UK</h1>
-                        <p>Explore the most beautiful places in the UK and enjoy the freedom of trail running.</p>
+                        <h1 id="title">Trail Running in the UK</h1>
+                        <p id="title-p">Explore the most beautiful places in the UK and enjoy the freedom of trail running.</p>
                     </div>
                 </div>
             </div>
@@ -53,40 +55,43 @@
 
         <section id="why">
             <div class="container-fluid" id="trail-container">
-                <div class="row no-gutters">
+                <div class="row no-gutters why">
                     <div class="col-md-4 offset-md-1">
-                        <h1>Freedom</h1>
-                        <p>Trail running provides an escape from the hectic everyday. Enjoy the most beautiful trails in
+                        <h1 id="freedom">Freedom</h1>
+                        <p id="freedom-p">Trail running provides an escape from the hectic everyday. Enjoy the most
+                            beautiful trails in
                             your part of the world and engage with nature.</p>
                     </div>
-                    <div class="col-md-4 offset-md-2">
-                        <h1>Mind</h1>
-                        <p>Trail running provides an escape from the hectic everyday. Enjoy the most beautiful trails in
+                    <div class="col-md-4 offset-md-2 why">
+                        <h1 id="mind">Mind</h1>
+                        <p id="mind-p">Trail running provides an escape from the hectic everyday. Enjoy the most
+                            beautiful trails in
                             your part of the world and engage with nature.</p>
                     </div>
                 </div>
                 <div class="row no-gutters">
-                    <div class="col-md-3 offset-md-3">
-                        <h1>Body</h1>
-                        <p>Trail running provides an escape from the hectic everyday. Enjoy the most beautiful trails in
+                    <div class="col-md-3 offset-md-3 why">
+                        <h1 id="body">Body</h1>
+                        <p id="body-p">Trail running provides an escape from the hectic everyday. Enjoy the most
+                            beautiful trails in
                             your part of the world and engage with nature.</p>
                     </div>
-                    <div class="col-md-3 offset-md-2">
-                        <h1>The Challenge</h1>
-                        <p>From 5k trail runs in your local park to 200+ mile epic endurance events such as the Pennine
+                    <div class="col-md-3 offset-md-2 why">
+                        <h1 id="challenge">The Challenge</h1>
+                        <p id="challenge-p">From 5k trail runs in your local park to 200+ mile epic endurance events such as the Pennine
                             Way or Marathon de Sables and all distances in between trail running offers every type of
                             challenge you may be looking for.</p>
                     </div>
                 </div>
                 <div class="row no-gutters">
-                    <div class="col-md-4 offset-md-2">
-                        <h1>Community</h1>
-                        <p>The explosion in the popularity of trail running means there is an active and vibrant
+                    <div class="col-md-4 offset-md-2 why">
+                        <h1 id="community">Community</h1>
+                        <p id="community-p">The explosion in the popularity of trail running means there is an active and vibrant
                             community....</p>
                     </div>
-                    <div class="col-md-4 offset-md-3">
-                        <h1>Peace</h1>
-                        <p>The explosion in the popularity of trail running means there is an active and vibrant
+                    <div class="col-md-4 offset-md-3 why">
+                        <h1 id="peace">Peace</h1>
+                        <p id="peace-p">The explosion in the popularity of trail running means there is an active and vibrant
                             community....</p>
                     </div>
                 </div>
@@ -132,6 +137,7 @@
                 </div>
             </div>
         </section>
+        <button type="button" class="btn btn-primary" id="top">Top</button>
     </main>
 
     <footer>
@@ -172,9 +178,6 @@
 
     <!-- BOOTSTRAP SCRIPTS -->
 
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -183,12 +186,11 @@
         crossorigin="anonymous"></script>
     <script
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKwHOsyDBmqxVqQm1CSfFXVOMQG2w8gvE&callback=initMap">
         </script>
     <script src="assets/js/map.js"></script>
+    <script src="assets/js/scripts.js"></script>
 </body>
 
 </html>

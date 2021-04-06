@@ -45,7 +45,14 @@ button.navbar-toggler {
     float: left;
 }
 
-
+#top {
+    position: fixed;
+    height: 50px;
+    right: 20px;
+    display: none;
+    z-index: 1;
+    top: 45%
+} 
 
 /* --------------------------- HERO IMAGE AND SECTION */
 
@@ -63,6 +70,15 @@ button.navbar-toggler {
 
 #hero-container {
   padding: 0;
+}
+
+#title {
+    font-size: 32px;
+    display: none;
+}
+
+#title-p {
+    display: none;
 }
 
 
@@ -85,6 +101,14 @@ button.navbar-toggler {
 #trail-container {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.why {
+    min-height: 250px;
+}
+
+#freedom-p, #mind-p, #body-p, #challenge-p, #community-p, #peace-p {
+    display: none;
 }
 
 /* --------------------------- MAP SECTION */
