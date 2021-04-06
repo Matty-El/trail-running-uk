@@ -7,6 +7,7 @@ $(document).ready(function () {
     $("#title-p").fadeIn(2000)
 });
 
+
 // why trail running text hide / show
 $(document).ready(function () {
 
