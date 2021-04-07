@@ -1,4 +1,10 @@
 
+
+// build table to display information about trails in region
+
+
+
+
 // headline and tagline text animation
 
 $(document).ready(function () {
@@ -31,7 +37,7 @@ $(document).ready(function () {
     });
 });
 
-// smooth scrolling for website
+// smooth scrolling for website - add link to where sourced code
 $(document).ready(function () {
     $('a[href^="#"]').on('click', function (e) {
 
@@ -47,8 +53,8 @@ $(document).ready(function () {
     });
 });
 
-// button to scroll back to top of web page
-$(function () {
+// button to scroll back to top of web page - add reference to where sourced code - check code for need for window element
+$(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() != 0) {
             $('#top').fadeIn();
@@ -61,3 +67,7 @@ $(function () {
         $('body, html').animate({ scrollTop: 0 }, 500);
     });
 })
+
+const regions = [
+
+]
