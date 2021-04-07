@@ -24,21 +24,13 @@ const locations = [
     ['Southwest', 'South Devon', 50.292519765851196, -3.8941383357406942]
 ];
 
-// initialize map, add markers and cluster
-function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 5,
-        center: {
-            lat: 53.365816267881975,
-            lng: -1.4922523393807863
-        }
-    });
-
-}
-
 /* --------------------------- THE BEST TRAILS */
 
-function bestTrails() {
+function initMap() {
+
+    // empty array to avoid duplication of markers when click The Best Trails button again 
+    markers = []
+
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 5,
         center: {
@@ -54,15 +46,16 @@ function bestTrails() {
         });
         markers.push(trails);
 
-    var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+    }
 
+    // cluster markers for improved user experience
+    var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 
 }
 
-/* --------------------------- LOCAL CLUBS */
+/* --------------------------- LOCAL RUNNING CLUBS */
 
 let pos;
-let map;
 let bounds;
 let infoWindow;
 let currentInfoWindow;
@@ -73,7 +66,6 @@ function localClubs() {
     bounds = new google.maps.LatLngBounds();
     infoWindow = new google.maps.InfoWindow;
     currentInfoWindow = infoWindow;
-    /* TODO: Step 4A3: Add a generic sidebar */
 
     // Try HTML5 geolocation
     if (navigator.geolocation) {
@@ -89,7 +81,7 @@ function localClubs() {
         bounds.extend(pos);
 
         infoWindow.setPosition(pos);
-        infoWindow.setContent('Location found.');
+        infoWindow.setContent('Your location');
         infoWindow.open(map);
         map.setCenter(pos);
         
@@ -126,7 +118,7 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
 
 }
 
-/* --------------------------- LOCAL CLUBS SEARCH*/
+/* --------------------------- LOCAL RUNNING CLUBS SEARCH*/
 
 function getLocalClubs(position) {
     let request = {
@@ -139,14 +131,13 @@ function getLocalClubs(position) {
     service.nearbySearch(request, nearbyCallback);
 }
 
-/* --------------------------- LOCAL STORES */
+/* --------------------------- LOCAL SPORTS STORES */
 
 function localStores() {
     // Initialize variables
     bounds = new google.maps.LatLngBounds();
     infoWindow = new google.maps.InfoWindow;
     currentInfoWindow = infoWindow;
-    /* TODO: Step 4A3: Add a generic sidebar */
 
     // Try HTML5 geolocation
     if (navigator.geolocation) {
@@ -162,7 +153,7 @@ function localStores() {
         bounds.extend(pos);
 
         infoWindow.setPosition(pos);
-        infoWindow.setContent('Location found.');
+        infoWindow.setContent('Your location');
         infoWindow.open(map);
         map.setCenter(pos);
         
@@ -199,7 +190,7 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
 
 }
 
-/* --------------------------- LOCAL STORES SEARCH*/
+/* --------------------------- LOCAL SPORTS STORES SEARCH*/
 
 function getLocalStores(position) {
     let request = {
@@ -213,7 +204,7 @@ function getLocalStores(position) {
 }
 
 
-/* --------------------------- LOCAL CALLBACK*/
+/* --------------------------- LOCAL SEARCH CALLBACK*/
 
 // Handle the results (up to 20) of the Nearby Search
 function nearbyCallback(results, status) {
@@ -268,12 +259,3 @@ function showDetails(placeResult, marker, status) {
     console.log('showDetails failed: ' + status);
     }
 }
-
-
-/* --------------------------- RUN */
-/*$("document").ready(function () {
-
-$("#trails").on('click', function () {
-        trailsMap();
-    });
-}*/
