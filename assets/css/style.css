@@ -1,17 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* --------------------------- FONTS */
+/* --------------------------- GENERAL */
 
-body {
+ody {
     font-family: "Roboto", sans-serif;
-    color: #000000;
+    color: #444444;
     /*color: #4B5657;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Anton", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+/* mouse pointer effect - adapted from https://getbutterfly.com/how-and-why-i-added-a-circle-following-my-mouse-pointer/ */
+#mouse-circle {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0 -18px;
+    border: 1px solid #444444; /* change colour scheme to match final design */
+    border-radius: 50%;
+    pointer-events: none;
+}
 
 /* --------------------------- NAVIGATION - IF REQUIRED */
 
@@ -57,19 +71,21 @@ button.navbar-toggler {
 /* --------------------------- HERO IMAGE AND SECTION */
 
 .hero-section {
-    background: url("../images/topo-uk.png") no-repeat center center;
+    background: url("../images/man-trail-snow.jpeg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    background-attachment: fixed;
+    background-position: center-top;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    position: relative;
+    opacity: 0.65;
 }
 
 #hero-container {
-  padding: 0;
+    padding: 0;
 }
 
 #title {
@@ -84,40 +100,117 @@ button.navbar-toggler {
 
 /* --------------------------- WHY TRAIL RUNNING SECTION */
 
-.trail-running-section {
-  background: url("../images/home-hero.jpeg") no-repeat center top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-  align-content: center;
-  margin: 0;
-  padding: 0;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1600px;
+    box-sizing:border-box;
+    margin: auto;
+    position: relative;
 }
 
-#trail-container {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.why {
-    min-height: 250px;
-}
-
-#freedom-p, #mind-p, #body-p, #challenge-p, #community-p, #peace-p {
+/* Hide the images by default */
+.slides {
     display: none;
+    box-sizing:border-box
 }
+
+.slides, img {
+  width: 100%;
+}
+
+/* Next & previous buttons - check why having to add important*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    text-decoration: none !important;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 24px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/*@media all and (max-width: 768px) {
+    .prev, .next {
+        font-size: 15px !important;
+    }
+}*/
+
+/* Position the "next button" to the right */
+.next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover add transparent background */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Slides text */
+.text {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50%;
+    display: flex;
+}
+
+/* Image selector */
+.selector {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.active, .selector:hover {
+    background-color: #444444;
+}
+
+/* Slides animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.0s;
+    animation-name: fade;
+    animation-duration: 3.0s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 0.65}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 0.65}
+}
+
+
 
 /* --------------------------- MAP SECTION */
 
 .map-section {
   height: 100vh;
   width: 100vw;
-  text-align: center;
-  align-content: center;
   margin: 0;
   padding: 0;
 }
@@ -127,15 +220,27 @@ button.navbar-toggler {
   margin-bottom: 50px;
 }
 
-#map-buttons {
-    margin-top: 50px;
-}
-
 #map {
-    width: 75%;
     min-height: 500px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#information p {
+    margin-top: 50px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#information h2 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@media all and (max-width: 1200px) {
+  #information {
+    text-align: center;
+  }
 }
 
 /* --------------------------- CONTACT - NEWSLETTER SECTION */

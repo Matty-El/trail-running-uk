@@ -37,85 +37,75 @@
                                 <a class="nav-link" href="#why">Why Trail Running?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#best-trails">The Best Trails</a>
+                                <a class="nav-link" href="#best-trails">Get Started!</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
-                <div class="row container">
-                    <div class="align-self-center col-6 offset-md-1">
-                        <h1 id="title">Trail Running in the UK</h1>
-                        <p id="title-p">Explore the most beautiful places in the UK and enjoy the freedom of trail running.</p>
-                    </div>
-                </div>
             </div>
+            <div id="mouse-circle"></div>
         </div>
 
         <!-- WHY TRAIL RUNNING SECTION -->
 
         <section id="why">
-            <div class="container-fluid" id="trail-container">
-                <div class="row no-gutters why">
-                    <div class="col-md-4 offset-md-1">
-                        <h1 id="freedom">Freedom</h1>
-                        <p id="freedom-p">Trail running provides an escape from the hectic everyday. Enjoy the most
-                            beautiful trails in
-                            your part of the world and engage with nature.</p>
-                    </div>
-                    <div class="col-md-4 offset-md-2 why">
-                        <h1 id="mind">Mind</h1>
-                        <p id="mind-p">Trail running provides an escape from the hectic everyday. Enjoy the most
-                            beautiful trails in
-                            your part of the world and engage with nature.</p>
-                    </div>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="slides fade">
+                    <img src="assets/images/home-hero-2.jpeg">
+                    <div class="text">Freedom:</div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col-md-3 offset-md-3 why">
-                        <h1 id="body">Body</h1>
-                        <p id="body-p">Trail running provides an escape from the hectic everyday. Enjoy the most
-                            beautiful trails in
-                            your part of the world and engage with nature.</p>
-                    </div>
-                    <div class="col-md-3 offset-md-2 why">
-                        <h1 id="challenge">The Challenge</h1>
-                        <p id="challenge-p">From 5k trail runs in your local park to 200+ mile epic endurance events such as the Pennine
-                            Way or Marathon de Sables and all distances in between trail running offers every type of
-                            challenge you may be looking for.</p>
-                    </div>
+                <div class="slides fade">
+                    <img src="assets/images/peak_district2.jpeg">
+                    <div class="text">Mind:</div>
                 </div>
-                <div class="row no-gutters">
-                    <div class="col-md-4 offset-md-2 why">
-                        <h1 id="community">Community</h1>
-                        <p id="community-p">The explosion in the popularity of trail running means there is an active and vibrant
-                            community....</p>
-                    </div>
-                    <div class="col-md-4 offset-md-3 why">
-                        <h1 id="peace">Peace</h1>
-                        <p id="peace-p">The explosion in the popularity of trail running means there is an active and vibrant
-                            community....</p>
-                    </div>
+                <div class="slides fade">
+                    <img src="assets/images/peak-district-stock.jpeg">
+                    <div class="text">Body:</div>
                 </div>
+                <div class="slides fade">
+                    <img src="assets/images/peak_district2.jpeg">
+                    <div class="text">The Challenge:</div>
+                </div>
+                <div class="slides fade">
+                    <img src="assets/images/peak-district-stock.jpeg">
+                    <div class="text">Community:</div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- Image selectors -->
+            <div id="selector">
+                <span class="selector" onclick="currentSlide(1)"></span>
+                <span class="selector" onclick="currentSlide(2)"></span>
+                <span class="selector" onclick="currentSlide(3)"></span>
+                <span class="selector" onclick="currentSlide(4)"></span>
+                <span class="selector" onclick="currentSlide(5)"></span>
             </div>
         </section>
 
         <!--  MAP SECTION -->
 
-        <section id="best-trails">
+        <section>
             <div class="container-fluid" id="map-container">
                 <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <h3>
-                            The best trail running locations in the UK by region
-                        </h3>
+                    <div class="col-xl-8" id="information">
+
                     </div>
-                    <div class="col-md-8">
-                        <h3 class="section-heading uppercase">
-                            Locations, clubs and stores for all your trail running needs
-                        </h3>
+                    <div class="col-xl-4 text-center">
                         <div id="map-buttons">
-                            <button type="button" class="btn btn-primary" onclick="initMap()">The Best Trails</button>
-                            <button type="button" class="btn btn-primary" onclick="localClubs()">Running Clubs</button>
-                            <button type="button" class="btn btn-primary" onclick="localStores()">Stores</button>
+                            <button type="button" class="btn btn-primary" onclick="initMap()">The Best Trails in
+                                Your
+                                Region</button>
+                            <button type="button" class="btn btn-primary" onclick="localClubs()">Local Running
+                                Clubs</button>
+                            <button type="button" class="btn btn-primary" onclick="localStores()">Local Sports
+                                Stores</button>
                         </div>
                         <div id="map">
                             <p></p>
@@ -187,9 +177,9 @@
     <script
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKwHOsyDBmqxVqQm1CSfFXVOMQG2w8gvE&libraries=places&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKwHOsyDBmqxVqQm1CSfFXVOMQG2w8gvE&libraries=places&callback=initMap"></script>
     <script src="assets/js/map.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
