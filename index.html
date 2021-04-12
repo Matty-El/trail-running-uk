@@ -26,32 +26,39 @@
         <div class="container-fluid" id="hero-container">
             <div class="row no-gutters hero-section">
                 <nav class="navbar navbar-expand-sm navbar-dark">
-                    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse"
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#why">Why Trail Running?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#best-trails">Get Started!</a>
+                                <a class="nav-link" href="#map-container">Get Started!</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#newsletterModal"
+                                    aria-label="Newsletter">Newsletter</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
-            <div id="mouse-circle"></div>
         </div>
 
-        <!-- DIVIDER -->
+        <!-- QUOTES -->
 
-        <div>
-            <div class="divider">
-                <p></p>
+        <div class="quotes-container">
+            <h3></h3>
+            <div class="quotes-paragraph">
+                <p id="quote"></p>
+                <p id="author"></p>
             </div>
+        </div>
+        <div class="divider">
         </div>
 
         <!-- WHY TRAIL RUNNING SECTION -->
@@ -96,26 +103,22 @@
             </div>
         </section>
 
-        <!-- DIVIDER -->
-
-        <div>
-            <div class="divider">
-                <p></p>
-            </div>
-        </div>
-
         <!--  MAP SECTION -->
 
         <section>
+            <div class="divider">
+            </div>
+            <div id="map-image">
+                <div>
+                </div>
+            </div>
             <div class="container-fluid" id="map-container">
                 <div class="row no-gutters">
                     <div class="col-xl-8" id="information">
-
                     </div>
                     <div class="col-xl-4 text-center">
                         <div id="map-buttons">
-                            <button type="button" class="btn btn-primary" onclick="initMap()">The Best Trails in
-                                Your
+                            <button type="button" class="btn btn-primary" onclick="initMap()">The Best Trails in Your
                                 Region</button>
                             <button type="button" class="btn btn-primary" onclick="localClubs()">Local Running
                                 Clubs</button>
@@ -123,7 +126,6 @@
                                 Stores</button>
                         </div>
                         <div id="map">
-                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -182,6 +184,59 @@
     </footer>
 
     <!-- SCRIPTS -->
+
+    <!-- MODAL NEWSLETTER FORM -->
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog" aria-labelledby="newsletterModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="newsletterModalTitle">Sign up to our Newsletter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="newsletter-form" onsubmit="return sendMail(this);">
+                        <div class="newsletter-group">
+                            <label for="fname">First Name</label>
+                            <input class="text-input" id="fname" type="text" name="first_name"
+                                placeholder="Enter your first name..." required>
+                        </div>
+                        <div class="newsletter-group">
+                            <label for="lname">Last Name</label>
+                            <input class="text-input" id="lname" type="text" name="last_name"
+                                placeholder="Enter your last name..." required>
+                        </div>
+                        <div class="newsletter-group">
+                            <label for="email">Email Address</label>
+                            <input class="text-input" id="email" type="email" name="email_address"
+                                placeholder="Enter your email address..." required>
+                        </div>
+                        <div class="newsletter-group">
+                            <fieldset class="newsletter-fieldset">
+                                <label for="5k" id="radio-label-5k">5k</label>
+                                <input type="radio" value="5k" id="5k" name="dist_pref" required>
+                                <label for="10k" class="radio-label">10k</label>
+                                <input type="radio" value="10k" id="10k" name="dist_pref" required>
+                                <label for="half" class="radio-label">1/2 Marathon</label>
+                                <input type="radio" value="half" id="half" name="dist_pref" required>
+                                <label for="half" class="radio-label">Marathon</label>
+                                <input type="radio" value="marathon" id="marathon" name="dist_pref" required>
+                                <label for="ultra" class="radio-label">Ultra</label>
+                                <input type="radio" value="ultra" id="ultra" name="dist_pref" required>
+                            </fieldset>
+                        </div>
+                        <div class="newsletter-group checkbox-inline">
+                            <label><input type="checkbox" value="newsletter"> Sign up to our newsletter</label>
+                        </div>
+                        <button type="submit" class="btn btn-lg" value="Newsletter">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
