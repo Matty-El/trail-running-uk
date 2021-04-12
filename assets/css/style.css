@@ -27,6 +27,14 @@ html {
     pointer-events: none;
 }
 
+/* Dividers */
+.divider {
+  color: #ddd;
+  background-color: #282E34;
+  text-align: center;
+  height: 10vh;
+}
+
 /* --------------------------- NAVIGATION - IF REQUIRED */
 
 /* nav bar  */
@@ -102,37 +110,45 @@ button.navbar-toggler {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1600px;
-    box-sizing:border-box;
-    margin: auto;
-    position: relative;
+  max-width: 1600px;
+  box-sizing: border-box;
+  margin: auto;
+  position: relative;
 }
 
 /* Hide the images by default */
 .slides {
-    display: none;
-    box-sizing:border-box
+  display: none;
+  box-sizing: border-box
 }
 
 .slides, img {
   width: 100%;
 }
 
-/* Next & previous buttons - check why having to add important*/
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    text-decoration: none !important;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 24px;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 11px 24px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  float: left;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+}
+
+.next {
+  float: right;
+  background-color: black;
+  color: white;
+  font-size: 30px;
 }
 
 /*@media all and (max-width: 768px) {
@@ -141,70 +157,71 @@ button.navbar-toggler {
     }
 }*/
 
-/* Position the "next button" to the right */
-.next {
-    right: 0px;
-    border-radius: 3px 0 0 3px;
-}
-
-/* On hover add transparent background */
-.prev:hover, .next:hover {
+/* On hover, add a black background color with a little bit see-through */
+/*.prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-}
+}*/
 
-/* Slides text */
+/* Caption text */
 .text {
-    color: #ffffff;
-    font-size: 30px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    width: 50%;
-    display: flex;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 50%;
+  display: flex;
 }
 
 /* Image selector */
 .selector {
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: 0 2px;
-    background-color: #bbbbbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin-top: 24px;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 #selector {
-    margin-bottom: 20px;
-    text-align: center;
+  text-align: center;
 }
 
 .active, .selector:hover {
-    background-color: #444444;
+  background-color: #444444;
 }
 
-/* Slides animation */
+/* Slide animation */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3.0s;
-    animation-name: fade;
-    animation-duration: 3.0s;
-    animation-fill-mode: forwards;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.0s;
+  animation-name: fade;
+  animation-duration: 3.0s;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 0.65}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 0.65
+  }
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 0.65}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 0.65
+  }
 }
-
-
 
 /* --------------------------- MAP SECTION */
 
