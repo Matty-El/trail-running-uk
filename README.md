@@ -25,7 +25,7 @@ View the live website [here.](https://matty-el.github.io/urban-paws/)
 
 The key goals for developing the website are:
 
--   To provide users with an attractive interactive website that provides an introduction to trail running and it's benefits.
+-   To provide users with an attractive interactive website that gives an introduction to trail running and it's benefits.
 -   To enable users to find the best locations for trail running local to them.
 -   To enable users to find running clubs local to them.
 -   To show users the location of shops selling the best trail running gear in their vicinity.
@@ -35,26 +35,26 @@ The key goals for developing the website are:
 
 #### User Stories
 
-#### Website Users
+#### Users
 
--   As a website user, I want to find out more about trail running and it's benefits so that I can see if it is a sport I would like to participate in.
--   As a website user, I want to be able to access the website on all types of device so that i can use the device that is most convenient to me at the time.
--   As a website user, I want a website that is clearly laid out and easy to navigate so that I can find the information i am looking for.
--   As a website user, I want to be able to find the best trail running locations near to me so that I can identify places to go trail running.
--   As a website user, I want to be able to find local running clubs so that I can consider becoming a member.
--   As a website user, I want to be able to find local sports shops that sell the gear I need so that I can participate in trail running.
--   As a website user, I want to sign up for the Trail Running UK newsletter so that I can find out more about trail running in the UK.
--   As a website user, I want to be able to link to the websites social media so that I can follow on social media.
+-   As a user, I want to find out more about trail running and it's benefits so that I can see if it is a sport I would like to participate in.
+-   As a user, I want to be able to access the website on all types of device so that i can use the device that is most convenient to me at the time.
+-   As a user, I want a website that is clearly laid out and easy to navigate so that I can find the information i am looking for.
+-   As a user, I want to be able to find the best trail running locations near to me so that I can identify places to go trail running.
+-   As a user, I want to be able to find local running clubs so that I can consider becoming a member.
+-   As a user, I want to be able to find local sports shops that sell the gear I need so that I can participate in trail running.
+-   As a user, I want to sign up for the Trail Running UK newsletter so that I can find out more about trail running in the UK.
+-   As a user, I want to be able to link to the websites social media so that I can follow on social media.
 
 ### Structure
 
-The Trail Running UK website has been designed to provide a simple and easy to navigate website. There is one page split into sections - A hero section with main image and tagline, About Trail Running section that provides some information about the benefits of trail running, the Map section that allows users to find trail running locations, running clubs and shops, a Contact section so that users can sign up to the Trail running UK newsletter and the footer containing links to Trail Running UK social media. ** CONSIDER THE WEATHER SECTION **
+The Trail Running UK website has been designed to provide a simple and easy to navigate website. There is one page split into sections - A hero section with main image and navigation menu, a Why Trail Running section that provides some information about the benefits of trail running, and a Get Started section that allows users to find trail running locations, running clubs and shops. A modal has been implemented so that users can sign up to the Trail running UK newsletter and the footer section containing links to Trail Running UK social media. ** CONSIDER THE WEATHER SECTION / FURTHER AFIELD SECTION **
 
 The website has the following key elements:
 
 -   A simple one page design divided into sections that users can easily scroll through to find the information they want.
 -   A Google Maps API to allow users to find locations for trail running, running clubs and shops local to them.
--   A form so that users can sign up to the Trail Running Uk newsletter.
+-   A form so that users can sign up to the Trail Running UK newsletter.
 -   Links to social media sites so that users can follow the company on social media.
 
 ### Skeleton
@@ -87,58 +87,42 @@ A simple colour palette has been developed - natural organic colours
 
 #### Typography
 
-The Montserrat font has been utilised for all menu and heading text across the website. Raleway font has been used for the main text sections.
+The Raleway font has been utilised for all menu and heading text across the website.
 
 ## Features
 
 ### Existing Features
 
-#### All pages
+#### Sections
 
-Header:
+Hero Section:
 
--   The brand logo linking to the Home page is displayed on the top left of each page.
--   A navigation menu on the top right of each page that allows the user to navigate the website by clicking the links or open a contact form by selecting the Contact menu item. There is a dropdown menu for the individual Shop Dog and Shop Cat pages. The menu links change colour when hovered over and are highlighted in a different colour when the user is currently on that page.
--   The contact form can be populated with mandatory first name, last name, email address and animal preference along with the options to add a comment or enquiry and to sign up to the company newsletter.
+-   Trail Running UK logo / title section.
+-   A navigation menu on the top left of the website hero section that allows the user to navigate the website by clicking the links or open a newsletter form by selecting the Newsletter menu item. The navigation menu collapses to a burger icon on smaller devices.
+-   The newsletter form can be populated with mandatory first name, last name, email address and race distance preference along with the options to add a comment or enquiry and to sign up to the Trail Running UK newsletter. The newsletter form is integrated with EmailJS and sends a confirmation email to the user to say they are now signed up
 
-*Note: The contact form does not currently submit any data. The final version of the form will submit data to a back-end database and will present a message to the user upon submitting the form.*
+*Note: The newsletter form does not currently submit any data. The final version of the form will submit data to a back-end database and will present a message to the user upon submitting the form.*
 
-Footer:
+#### Why Trail Running Section
 
--   A footer section displaying copyright wording, a Union Jack flag and links to Facebook, Twitter, YouTube, Instagram and Pinterest social media sites.
+-   This section of contains a slideshow with images of trail running locations around the UK and text highlighting some of the key benefits of trail running as a sport.
 
-#### Home page
+#### Get Started Section
 
-What we do section:
+-   Buttons to select trail running locations in the UK and running clubs and sports shops local to the user.
+-   The Best Trails in Your Region button populates trail running locations around the UK with a Google maps API integration displaying markers and clusters. Information about trail running is populated on clicking the button.
+-   The Local Running Clubs button geolocates the user via a Google Maps API integration and populates the map with running clubs local to the user. Information about the benefits of joining a running club is populated on clicking the button.
+-   The Local Sports Stores button geolocates the user via a Google Maps API integration and populates the map with running clubs local to the user. Information about the gear required to start trail running is populated on clicking the button.
 
--   This section of the Home page outlines what the company does and provides a call to action 'Find Out More' button to open the contact form. The contact form can be populated with mandatory first name, last name, email address and animal preference along with the options to add a comment or enquiry and to sign up to the company newsletter.
+** TO CONSIDER ERROR HANDLING FOR GEOLOCATION AND THE OPTION OF ADDING A POSTCODE SEARCH IF GEOLOCATION FAILS **
 
-*Note: The contact form does not currently submit any data. The final version of the form will submit data to a back-end database and will present a message to the user upon submitting the form.*
+#### Footer Section
 
-PADD Suit section:
-
--   This section of the Home page outlines a product the company has developed - the PADD Suit. There are two buttons included in this section to link through to the Shop Dog and Shop Cat pages.
-
-#### Shop Cat and Shop Dog pages
-
--   These pages contain the product listings with a product card for each individual product.
--   The product cards include a picture of each product along with a product description, sizes and colour swatches that expand when hovered over.
--   The footer section of the product cards has a size guide button which when clicked opens a size guide for the products. There is a 'Buy on Amazon' button that links to the Amazon.co.uk website when clicked.
-
-*Note: The buttons to link to the Amazon.co.uk website will be pre-populated with the listing search details once the listings are on Amazon.*
-
-#### About us page
-
--   This page contains a simple profile for each of the members of the Urban Paws team.
+-   This section has copyright wording and links to Facebook, Twitter, YouTube, Instagram and Pinterest social media sites.
 
 ### Features Left to Implement
 
--   Active product links to Amazon.co.uk.
--   Contact form data submission and acknowledgement.
--   Urban Paws Blog.
--   Featured products.
--   Shopping cart.
--   eCommerce capabilities.
+-   TBC
 
 ## Technologies Used
 
@@ -148,6 +132,8 @@ The following technologies have been used to complete the UX design, capture use
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5) - used for the structure and content of the Urban Paws website.
 -   [CSS3](https://en.wikipedia.org/wiki/CSS) - used to style the Urban Paws website.
+-   [JavaScript](https://www.javascript.com/) - used for....
+-   [jQuery](https://jquery.com/) - used for.....
 
 ### Frameworks - Tools - Libraries
 
@@ -158,9 +144,9 @@ The following technologies have been used to complete the UX design, capture use
 -   [Font Awesome](https://fontawesome.com/) - used to source icons for the footer section of the website.
 -   [Balsamiq](https://balsamiq.com/) - utilised for the development of the website wireframes.
 -   [Tiny PNG](https://tinypng.com/) - for the compression of images for all pages of the website.
--   [Canva](https://canva.com/) - used to remove the background of the images for the product cards.
--   [JIRA](https://www.atlassian.com/software/jira) - for the tracking of development tasks (user stories and subtasks) and capturing and tracking defects.
--   [Frontify](https://www.frontify.com) - used to develop the Urban Paws branding guidelines template.
+-   [Canva](https://canva.com/) - used for.....
+-   [JShint]
+-   
 -   [Markup validation service](https://validator.w3.org/) - for the validation of HTML5 code.
 -   [CSS validation service](https://jigsaw.w3.org/css-validator/) - for the validation of the CSS3 code.
 -   [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used to edit changes prior to implementing the code changes, to diagnose problems and for performance, accessibility, best practice and search engine optimisation testing.
@@ -203,7 +189,7 @@ To clone this project from GitHub.
 
 All text content included in the Urban Paws website is my own.
 
-The code for the product card colour swatches has been adapted from [codepen.io product card example](https://codepen.io/virgilpana/pen/RNYQwB/).
+The code for ....... has been adapted from [codepen.io product card example](https://codepen.io/virgilpana/pen/RNYQwB/).
 
 ### Media
 
