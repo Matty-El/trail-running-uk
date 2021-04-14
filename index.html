@@ -14,6 +14,13 @@
         type="text/css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_u9HfoIBIj5UDPkrE274QW");
+        })();
+    </script>
     <title>Trail Running UK</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
@@ -25,14 +32,14 @@
 
         <div class="container-fluid" id="hero-container">
             <div class="row no-gutters hero-section">
-                <nav class="navbar navbar-expand-sm navbar-dark">
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#why">Why Trail Running?</a>
                             </li>
@@ -66,7 +73,7 @@
         <section id="why">
             <!-- Slideshow container -->
             <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
+                <!-- Images with caption text -->
                 <div class="slides fade">
                     <img src="assets/images/home-hero-2.jpeg" class="img">
                     <div class="text">Freedom:</div>
@@ -89,8 +96,8 @@
                 </div>
 
                 <!-- Next and previous buttons -->
-                <a class="previous" onclick="plusSlides(-1)">&#8249;</a>
-                <a class="next" onclick="plusSlides(1)">&#8250;</a>
+                <a class="previous" onclick="plusSlides(-1)"><i class="fa fa-step-backward"></i></a>
+                <a class="next" onclick="plusSlides(1)"><i class="fa fa-step-forward"></i></a>
 
                 <!-- Image selectors -->
                 <div id="selector">
@@ -114,9 +121,9 @@
             </div>
             <div class="container-fluid" id="map-container">
                 <div class="row no-gutters">
-                    <div class="col-xl-8" id="information">
+                    <div class="col-xl-6" id="information">
                     </div>
-                    <div class="col-xl-4 text-center">
+                    <div class="col-xl-6 text-center" id="map-subsection">
                         <div id="map-buttons">
                             <button type="button" class="btn btn-primary" onclick="initMap()">The Best Trails in Your
                                 Region</button>
@@ -134,7 +141,7 @@
 
         <!--  NEWSLETTER SECTION -->
 
-        <section>
+        <section id="newsletter-image">
             <div class="container-fluid">
                 <div class="row no-gutters">
                     <div class="col">
@@ -144,7 +151,7 @@
                 </div>
             </div>
         </section>
-        <button type="button" class="btn btn-primary" id="top">Top</button>
+
     </main>
 
     <footer>
@@ -183,7 +190,6 @@
         </div>
     </footer>
 
-    <!-- SCRIPTS -->
 
     <!-- MODAL NEWSLETTER FORM -->
 
@@ -238,6 +244,8 @@
         </div>
     </div>
 
+    <!-- SCRIPTS -->
+
     <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
@@ -249,7 +257,8 @@
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKwHOsyDBmqxVqQm1CSfFXVOMQG2w8gvE&libraries=places&callback=initMap"></script>
     <script src="assets/js/map.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/newsletter.js"></script>
 </body>
 
 </html>

@@ -28,12 +28,13 @@ const locations = [
 
 function initMap() {
 
-    // empty array to avoid duplication of markers when click The Best Trails button again 
-    
+    // empty array to avoid duplication of markers when click The Best Trails button again
     $("#information").empty().append(
         `<div>
             <h2>The Best Trails in the UK</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?.</p>
+            <p>The UK has some of the best trails running locations in the world. From the rugged and stunning trails of the Lake District to the coastal paths of the South East there is something for everyone.  Whether you prefer to run in the mountains, by the sea, or through your favourite woodland you are spoilt for choice, and being a relatively small country these places are accessible to all.</p>
+            <p>Some of the pioneers of trail runnning have emerged from the UK.  With a proud history of producing great fell runners the UK has seen some of the all time great trail running athletes.  From Joss Naylor in the 1980's, Steve Birkenshaw in the late 90's and for the next 2 decades and more recently the likes of Paul Tierney, Damian Hall and Carla Molinaro, these individuals have set some incredible markers in the world of ultra distance trail running. If you feel the desire to follow in the footsteps of these great athletes just look up their achievements and set yourself your next challenge.</p>
+            <p>Get out there and explore our beautiful trails and reap the benefits of what this amazing sport has to offer.</p>
         </div>`
     );
 
@@ -74,7 +75,9 @@ function localClubs() {
     $("#information").empty().append(
         `<div>
             <h2>Running Clubs</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p>Joining a club is one of the best things you can do to progress your running, so with this in mind, we’ve compiled a list of the reasons why:
+            You are your environment.  By joining a club and surrounding yourself with experienced, enthusiastic people, you’re more likely to run long-term, instead of depending solely on your own motivation.  Seeing what others who started off just like you have achieved will inspire you to keep training.
+            Running clubs will encourage you to vary your training. Clubs usually work with coaches and long term members to organise different sessions; e.g. Monday night – trail running, Tuesday night – medium length run, Thursday night – speed work, Sunday morning – long run.  Training by yourself means it’s easy to get in a rut of the same routes at the same old pace – inevitably your running progress will plateau unless you change it up a bit.</p>
         </div>`
     );
 
@@ -85,48 +88,48 @@ function localClubs() {
 
     // Try HTML5 geolocation
     if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(position => {
-        pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-        };
-        map = new google.maps.Map(document.getElementById('map'), {
-        center: pos,
-        zoom: 15
+        navigator.geolocation.getCurrentPosition(position => {
+            pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: pos,
+                zoom: 15
+            });
+            bounds.extend(pos);
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Your location');
+            infoWindow.open(map);
+            map.setCenter(pos);
+
+            getLocalClubs(pos);
+
+        }, () => {
+            // Browser supports geolocation, but user has denied permission
+            handleLocationError(true, infoWindow);
         });
-        bounds.extend(pos);
-
-        infoWindow.setPosition(pos);
-        infoWindow.setContent('Your location');
-        infoWindow.open(map);
-        map.setCenter(pos);
-        
-        getLocalClubs(pos);
-
-    }, () => {
-        // Browser supports geolocation, but user has denied permission
-        handleLocationError(true, infoWindow);
-    });
     } else {
-    // Browser doesn't support geolocation
-    handleLocationError(false, infoWindow);
+        // Browser doesn't support geolocation
+        handleLocationError(false, infoWindow);
     }
 }
 
 // Handle a geolocation error
 function handleLocationError(browserHasGeolocation, infoWindow) {
     // Set default location to Sheffield, UK
-    pos = {lat: 53.365816267881975, lng: -1.4922523393807863};
+    pos = { lat: 53.365816267881975, lng: -1.4922523393807863 };
     map = new google.maps.Map(document.getElementById('map'), {
-    center: pos,
-    zoom: 15
+        center: pos,
+        zoom: 15
     });
 
     // Display an InfoWindow at the map center
     infoWindow.setPosition(pos);
     infoWindow.setContent(browserHasGeolocation ?
-    'Geolocation permissions denied. Using default location.' :
-    'Error: Your browser doesn\'t support geolocation.');
+        'Geolocation permissions denied. Using default location.' :
+        'Error: Your browser doesn\'t support geolocation.');
     infoWindow.open(map);
     currentInfoWindow = infoWindow;
 
@@ -138,9 +141,9 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
 
 function getLocalClubs(position) {
     let request = {
-    location: position,
-    rankBy: google.maps.places.RankBy.DISTANCE,
-    keyword: 'running clubs'
+        location: position,
+        rankBy: google.maps.places.RankBy.DISTANCE,
+        keyword: 'running clubs'
     };
 
     service = new google.maps.places.PlacesService(map);
@@ -154,7 +157,9 @@ function localStores() {
     $("#information").empty().append(
         `<div>
             <h2>Good Sports Stores</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p>You don't need much gear to start running.  However, a good pair of running shoes is essential and will ensure you get the best from your running and remain injury free.</p>
+            <p>The best thing to do is to head down to your local friendly running shop and get some advice on the best shoes for you.  Everyone is different and finding the running shoes that are best suited to you will make your experience all the better</p>
+            <p>Find the right shoes, throw on a t-shirt and some shorts and head out onto the trails to explore.</p>
         </div>`
     );
 
@@ -166,75 +171,73 @@ function localStores() {
 
     // Try HTML5 geolocation
     if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(position => {
-        pos = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-        };
-        map = new google.maps.Map(document.getElementById('map'), {
-        center: pos,
-        zoom: 15
+        navigator.geolocation.getCurrentPosition(position => {
+            pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: pos,
+                zoom: 15
+            });
+            bounds.extend(pos);
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Your location');
+            infoWindow.open(map);
+            map.setCenter(pos);
+
+            getLocalStores(pos);
+
+        }, () => {
+            // Browser supports geolocation, but user has denied permission
+            handleLocationError(true, infoWindow);
         });
-        bounds.extend(pos);
-
-        infoWindow.setPosition(pos);
-        infoWindow.setContent('Your location');
-        infoWindow.open(map);
-        map.setCenter(pos);
-        
-        getLocalStores(pos);
-
-    }, () => {
-        // Browser supports geolocation, but user has denied permission
-        handleLocationError(true, infoWindow);
-    });
     } else {
-    // Browser doesn't support geolocation
-    handleLocationError(false, infoWindow);
+        // Browser doesn't support geolocation
+        handleLocationError(false, infoWindow);
     }
 }
 
 // Handle a geolocation error
 function handleLocationError(browserHasGeolocation, infoWindow) {
     // Set default location to Sheffield, UK
-    pos = {lat: 53.365816267881975, lng: -1.4922523393807863};
+    pos = { lat: 53.365816267881975, lng: -1.4922523393807863 };
     map = new google.maps.Map(document.getElementById('map'), {
-    center: pos,
-    zoom: 15
+        center: pos,
+        zoom: 15
     });
 
     // Display an InfoWindow at the map center
     infoWindow.setPosition(pos);
     infoWindow.setContent(browserHasGeolocation ?
-    'Geolocation permissions denied. Using default location.' :
-    'Error: Your browser doesn\'t support geolocation.');
+        'Geolocation permissions denied. Using default location.' :
+        'Error: Your browser doesn\'t support geolocation.');
     infoWindow.open(map);
     currentInfoWindow = infoWindow;
 
     getLocalStores(pos);
-
 }
 
 /* --------------------------- LOCAL SPORTS STORES SEARCH*/
 
 function getLocalStores(position) {
     let request = {
-    location: position,
-    rankBy: google.maps.places.RankBy.DISTANCE,
-    keyword: 'sports stores'
+        location: position,
+        rankBy: google.maps.places.RankBy.DISTANCE,
+        keyword: 'sports stores'
     };
 
     service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, nearbyCallback);
 }
 
-
 /* --------------------------- LOCAL SEARCH CALLBACK*/
 
 // Handle the results (up to 20) of the Nearby Search
 function nearbyCallback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
-    createMarkers(results);
+        createMarkers(results);
     }
 }
 
@@ -242,29 +245,29 @@ function nearbyCallback(results, status) {
 
 function createMarkers(places) {
     places.forEach(place => {
-    let marker = new google.maps.Marker({
-        position: place.geometry.location,
-        map: map,
-        title: place.name
-    });
+        let marker = new google.maps.Marker({
+            position: place.geometry.location,
+            map: map,
+            title: place.name
+        });
 
-    google.maps.event.addListener(marker, 'click', () => {
-    let request = {
-    placeId: place.place_id,
-    fields: ['name', 'formatted_address', 'geometry', 'rating',
-        'website', 'photos']
-    };
+        google.maps.event.addListener(marker, 'click', () => {
+            let request = {
+                placeId: place.place_id,
+                fields: ['name', 'formatted_address', 'geometry', 'rating',
+                    'website', 'photos']
+            };
 
-    /* Only fetch the details of a place when the user clicks on a marker.
-    * If we fetch the details for all place results as soon as we get
-    * the search response, we will hit API rate limits. */
-    service.getDetails(request, (placeResult, status) => {
-    showDetails(placeResult, marker, status)
-    });
-});
+            /* Only fetch the details of a place when the user clicks on a marker.
+            * If we fetch the details for all place results as soon as we get
+            * the search response, we will hit API rate limits. */
+            service.getDetails(request, (placeResult, status) => {
+                showDetails(placeResult, marker, status)
+            });
+        });
 
-    // Adjust the map bounds to include the location of this marker
-    bounds.extend(place.geometry.location);
+        // Adjust the map bounds to include the location of this marker
+        bounds.extend(place.geometry.location);
     });
     /* Once all the markers have been placed, adjust the bounds of the map to
     * show all the markers within the visible area. */
@@ -273,14 +276,14 @@ function createMarkers(places) {
 
 function showDetails(placeResult, marker, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
-    let placeInfowindow = new google.maps.InfoWindow();
-    placeInfowindow.setContent('<div><strong>' + placeResult.name +
-        '</strong><br>' + 'Rating: ' + placeResult.rating + '</div>');
-    placeInfowindow.open(marker.map, marker);
-    currentInfoWindow.close();
-    currentInfoWindow = placeInfowindow;
-    showPanel(placeResult);
+        let placeInfowindow = new google.maps.InfoWindow();
+        placeInfowindow.setContent('<div><strong>' + placeResult.name +
+            '</strong><br>' + 'Rating: ' + placeResult.rating + '</div>');
+        placeInfowindow.open(marker.map, marker);
+        currentInfoWindow.close();
+        currentInfoWindow = placeInfowindow;
+        showPanel(placeResult);
     } else {
-    console.log('showDetails failed: ' + status);
+        console.log('showDetails failed: ' + status);
     }
 }
