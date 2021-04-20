@@ -5,16 +5,19 @@
 body {
   background-color: #979797;
   margin: 0;
-  padding: 0;}
+  padding: 0;
+}
 
 .panel {
   background-color: #FFFFFF;
   color: #666;
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
-  overflow: auto;}
+  overflow: auto;
+}
 
 button {
-  border: none;}
+  border: none;
+}
 
 body, button {
     font-family: 'Roboto', sans-serif;
@@ -26,11 +29,11 @@ h2, h3 {
 }
 
 h2 {
-  color: #666666;
+  color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 200%;
-  line-height: 1em;
+  line-height: 1.0em;
 }
 
 h3 {
@@ -65,16 +68,25 @@ html {
 
 /* --------------------------- NAVIGATION */
 
-.navbar {
+/*.navbar {
   position: absolute;
   top: 0;
+}*/
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #ffffff;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #444444;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000000;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   font-weight: 600;
   font-size: 22px;
   color: #444444;
@@ -87,13 +99,20 @@ html {
   z-index: 1;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 button.navbar-toggler {
   float: left;
 }
 
 /* --------------------------- HERO IMAGE AND SECTION */
 
-.hero-section {
+#hero-image {
   background: url("../images/man-trail-snow.jpeg");
   -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -104,28 +123,22 @@ button.navbar-toggler {
     display: flex;
     width: 100vw;
     padding: 0;
+    margin-top: 56px;
+    opacity: 0.65;
     position: relative;
-
 }
 
 #hero-container {
   padding: 0;
 }
 
-.title {
+#hero-image h2 {
   position: absolute;
-  top: 50%;
+  top: 65%;
+  right: 0%;
   width: 100%;
   text-align: center;
   color:#FFFFFF;
-}
-
-.title span.border {
-  background-color: #111111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
 }
 
 @media (min-width: 1px) and (max-width: 1024px) {
@@ -145,7 +158,7 @@ button.navbar-toggler {
 .quotes-container {
   margin: 40px auto;
   text-align: center;
-  min-height: 150px;
+  min-height: 250px;
   width: 275px;
 }
 
@@ -163,14 +176,14 @@ button.navbar-toggler {
   align-items: center;
 }
 
-@media screen and (min-width: 540px) {
+@media all and (min-width: 540px) {
   .quotes-container {
     width: 480px;
-    height: 150px;
+    height: 350px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media all and (min-width: 1024px) {
   .quotes-container {
     width: 650px;
     height: 150px;
@@ -181,15 +194,15 @@ button.navbar-toggler {
   }
 }
 
-/* adapted from - https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/* Ddapted from - http://www.javascriptbook.com/ */
 
-/********** SLIDER **********/
+/* --------------------------- SLIDER */
 .slider {
   max-width: 940px;
   margin: 0px auto 30px auto;}
 
 .slide-viewer {
-    position: relative; /* needed for IE7 */
+    position: relative;
     overflow: hidden;
     height: 430px;}
 
@@ -207,24 +220,41 @@ button.navbar-toggler {
 .slide:first-child {
     display: block;}
 
-
-/********** BUTTONS **********/
 .slide-buttons {
   text-align: center;}
 
 .slide-btn {
   border: none;
   background: none;
-  color: #000;
-  font-size: 200%;
-  line-height: 0.5em;}
+  color: #FFFFFF;
+  font-size: 300%;
+  line-height: 2.0em;}
 
 .slide-btn.active, .slide-btn:hover {
   color: #ed8e6c;
   cursor: pointer;
 }
 
-/* --------------------------- MAP SECTION */
+.slide-viewer h2 {
+  position: absolute;
+  top: 65%;
+  right: 0%;
+  width: 100%;
+  text-align: center;
+  color:#FFFFFF;
+}
+
+.slide-viewer p {
+  position: absolute;
+  font-style: italic;
+  top: 75%;
+  right: 0%;
+  width: 100%;
+  text-align: center;
+  color:#FFFFFF;
+}
+
+/* --------------------------- GET STARTED SECTION */
 
 #map-image {
   background: url("../images/trail.jpg");
@@ -239,7 +269,7 @@ button.navbar-toggler {
 
 @supports (-webkit-touch-callout: none) {
   /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
-  #attractions-image, #events-image, #weather-image {
+  #hero-image, #map-image, #newsletter-image {
     background-attachment: scroll;
     /* Fix parralax image display on Safari / iOS */
   }
@@ -286,13 +316,14 @@ button.navbar-toggler {
   color: #FFFFFF
 }
 
+.btn {
+  margin: 5px;
+}
+
 @media all and (max-width: 1000px) {
   #information, #race-information {
     text-align: center;
   }
-  /*#information p, {
-    text-align: center;
-  }*/
 
 .map-subsection {
     padding-top: 50px;
@@ -311,12 +342,6 @@ button.navbar-toggler {
   width: 100vw;
   opacity: 0.70;
 }
-
-/* need to resolve issue with modal opacity */
-/*.modal-backdrop
-{
-    opacity:1.0 !important;
-}*/
 
 .newsletter-section {
   background-color: white;
@@ -337,7 +362,7 @@ button.navbar-toggler {
   padding: 30px 30px 30px 30px;
 }
 
-#newsletter-title {
+#newsletterModalTitle {
   color: #4B5657;
 }
 .newsletter-group{
@@ -346,20 +371,14 @@ button.navbar-toggler {
 }
 
 .text-input {
-  background-color: #F6F7F7;
-  color: #6E7F80;
+  color: #4B5657;
   width: 90%;
   border: 2px solid rgba(150, 164, 165, 0.5);
   border-radius: 5px;
 }
 
 .text-input:hover {
-  border-color: #FF834F;
-}
-
-.text-input:focus {
-  outline: #FF834F;
-  background-color: #F6F7F7;
+  border-color: #4B5657;
 }
 
 .text-area {
@@ -367,18 +386,11 @@ button.navbar-toggler {
   width: 100%;
   border: 2px solid rgba(150, 164, 165, 0.5);
   border-radius: 5px;
-  outline: #FF834F;
-  background-color: #F6F7F7;
   color: #6E7F80;
 }
 
-.text-area:hover {
-  border-color: #FF834F;
-}
-
 .text-area:focus {
-  outline-color: #FF834F;
-  background-color: #F6F7F7;
+  background-color: #6E7F80;
 }
 
 .radio-label {
@@ -386,10 +398,15 @@ button.navbar-toggler {
   padding-right: 10px;
 }
 
-#radio-label-5k {
+#radio-label-5k, #radio-label-ultra {
   padding-left: 0;
   padding-right: 10px;
 }
+
+#newsletter-button {
+  margin-left: 0px;
+}
+
 
 /* --------------------------- FOOTER */
 footer {

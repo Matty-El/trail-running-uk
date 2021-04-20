@@ -27,8 +27,8 @@
     <!-- HERO IMAGE AND SITE HEADLINE -->
 
     <div class="container-fluid" id="hero-container">
-      <div class="row no-gutters hero-section">
-        <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="row no-gutters" id="hero-image">
+        <nav class="navbar navbar-expand-md navbar-light navbar-fixed">
           <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,14 +50,14 @@
           </div>
         </nav>
         <div>
-          <h2 class="title">Trail Running</h2>
-      </div>
+          <h2 class="title">Trail Running UK</h2>
+        </div>
       </div>
     </div>
 
     <!-- QUOTES -->
 
-    <div class="quotes-container">
+    <div class="quotes-container" id="why">
       <h3></h3>
       <div class="quotes-paragraph">
         <p id="quote"></p>
@@ -65,26 +65,33 @@
       </div>
     </div>
     <div>
-    <!--<div class="divider">-->
     </div>
 
     <!-- WHY TRAIL RUNNING SECTION -->
 
-    <section id="why">
+    <section>
       <div class="slider">
         <div class="slide-viewer">
           <div class="slide-group">
             <div class="slide slide-1">
-              <img src="assets/images/peak_district2.jpeg" alt="No two are the same" />
+              <h2>Mind</h2>
+              <p>A great way to calm the mind and enjoy the beauty of nature</p>
+              <img src="assets/images/peak_district2.jpeg" alt="Peak District" />
             </div>
             <div class="slide slide-2">
-              <img src="assets/images/home-hero-2.jpeg" alt="Monsieur Mints" />
+              <h2>Body</h2>
+              <p>Excellent for all rounds fitness and strength due to the variable terrain</p>
+              <img src="assets/images/home-hero-2.jpeg" alt="Running Man" />
             </div>
             <div class="slide slide-3">
-              <img src="assets/images/peak-district-stock.jpeg" alt="The Flower Series" />
+              <h2>Freedom</h2>
+              <p>Enjoy the freedom of running in some of the wildest places</p>
+              <img src="assets/images/peak-district-stock.jpeg" alt="Peak District" />
             </div>
             <div class="slide slide-4">
-              <img src="assets/images/peak_district2.jpeg" alt="Salt o' The Sea" />
+              <h2>Community</h2>
+              <p>Trail running is more popular than ever with a vibrant community</p>
+              <img src="assets/images/peak_district2.jpeg" alt="Peak District" />
             </div>
           </div>
         </div>
@@ -95,9 +102,7 @@
     <!--  MAP SECTION -->
 
     <section>
-        <div>
-      <!--<div class="divider">-->
-      </div>
+
       <div id="map-image">
         <div>
         </div>
@@ -108,7 +113,7 @@
           </div>
           <div class="col-xl-6 text-center map-subsection">
             <div id="map-buttons">
-              <button type="button" class="btn btn-primary" id="best-trails">The Best Trails in Your Region</button>
+              <button type="button" class="btn btn-primary" id="best-trails">The Best Trails</button>
               <button type="button" class="btn btn-primary" id="local-clubs">Local Running Clubs</button>
               <button type="button" class="btn btn-primary" id="local-stores">Local Sports Stores</button>
             </div>
@@ -119,39 +124,35 @@
       </div>
     </section>
 
-
     <!--  EPIC RACES SECTION -->
 
     <section>
-        <div>
-      <!--<div class="divider">-->
-      </div>
       <div class="newsletter-image">
         <div>
         </div>
       </div>
       <div class="container-fluid map-container" id="races">
-      <div class="row no-gutters">
-        <div class="col-xl-6" id="race-information">
-        </div>
-        <div class="col-xl-6 text-center map-subsection">
-          <div class="race-search">
-            <h3>Region: </h3>
-            <select name="region" id="region">
-              <option value="" selected="selected">Select region</option>
-            </select>
+        <div class="row no-gutters">
+          <div class="col-xl-6" id="race-information">
           </div>
-          <div class="race-search">
-            <h3>Race: </h3>
-            <select name="race" id="race">
-              <option value="" selected="selected">Please select race</option>
-            </select>
-          </div>
-          <div id="race-map">
+          <div class="col-xl-6 text-center map-subsection">
+            <div class="race-search">
+              <h3>Region: </h3>
+              <select name="region" id="region">
+                <option value="" selected="selected">Select region</option>
+              </select>
+            </div>
+            <div class="race-search">
+              <h3>Race: </h3>
+              <select name="race" id="race">
+                <option value="" selected="selected">Please select race</option>
+              </select>
+            </div>
+            <div id="race-map">
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
 
     <!--  NEWSLETTER SECTION -->
@@ -228,6 +229,7 @@
             </div>
             <div class="newsletter-group">
               <fieldset class="newsletter-fieldset">
+                <label for="racePref">Race Distance</label><br />
                 <label for="5k" id="radio-label-5k">5k</label>
                 <input type="radio" value="5k" id="5k" name="dist_pref" required>
                 <label for="10k" class="radio-label">10k</label>
@@ -235,15 +237,15 @@
                 <label for="half" class="radio-label">1/2 Marathon</label>
                 <input type="radio" value="half" id="half" name="dist_pref" required>
                 <label for="half" class="radio-label">Marathon</label>
-                <input type="radio" value="marathon" id="marathon" name="dist_pref" required>
-                <label for="ultra" class="radio-label">Ultra</label>
+                <input type="radio" value="marathon" id="marathon" name="dist_pref" required><br />
+                <label for="ultra" class="radio-label" id="radio-label-ultra">Ultra</label>
                 <input type="radio" value="ultra" id="ultra" name="dist_pref" required>
               </fieldset>
             </div>
             <div class="newsletter-group checkbox-inline">
               <label><input type="checkbox" value="newsletter"> Sign up to our newsletter</label>
             </div>
-            <button type="submit" class="btn btn-lg btn-success" value="Newsletter">Submit</button>
+            <button type="submit" class="btn btn-lg btn-success" value="Newsletter" id="newsletter-button">Submit</button>
           </form>
         </div>
       </div>
