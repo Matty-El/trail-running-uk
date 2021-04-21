@@ -17,7 +17,7 @@ $(window).scroll(function() {
 
 /* --------------------------- SLIDES */
 
-//Sourced from http://www.javascriptbook.com/
+//Sourced and adapted from http://www.javascriptbook.com/
 
 $('.slider').each(function() { // For every slider
   var $this = $(this); // Current slider
@@ -145,7 +145,7 @@ window.onload = function() {
     'North America': ['Badwater'],
     'South America': ['Rio Marathon'],
     'Africa': ['Marathon des Sables'],
-    'Asia': ['Delhi Marathon']
+    'Asia and Australasia': ['Delhi Marathon']
   }
 
   var regionSel = document.getElementById("region");
@@ -162,24 +162,54 @@ window.onload = function() {
       raceSel.options[raceSel.options.length] = new Option(z[i], z[i]);
     }
   };
-};
+}
 
 /* --------------------------- RACE INFORMATION */
 
+const races = [{
+  name: "Marathon du Mont Blanc",
+  location: "France / Switzerland",
+  distance: "171km",
+  elevation: "10,300",
+  terrain: "Trail",
+  difficulty: "Brutal",
+  description: "This one takes place every summer in the French mountain resort of Chamonix and is widely regarded as one of the most difficult ultramarathons in the world. It’s also one of the largest, with more than 2,500 toeing the start line in August. UTMB takes place over 7 days and hosts four other events, ranging from a 50km ultra to a 350km team event. The races have strict entry and qualification requirements. Hopeful participants must accumulate enough race points to qualify, gained in other trail races over the previous two years. As of 2020, you need a minimum of 10 UTMB points (which must come from only two races) to enter the ballot for the main event. While the best runners complete the loop in just over 20 hours, most runners take 32 to 46 hours to reach the finish line. Most runners will also have to run through two nights in order to complete the race.",
+  website: "https://www.marathonmontblanc.fr/en/",
+  lat: 45.91924995448426,
+  lng: 6.865826926381162
+  },
+  {
+  name: "Badwater",
+  location: "US",
+  distance: "171km",
+  elevation: "10,300",
+  terrain: "Trail",
+  difficulty: "Brutal",
+  description: "This one takes place every summer in the French mountain resort of Chamonix and is widely regarded as one of the most difficult ultramarathons in the world. It’s also one of the largest, with more than 2,500 toeing the start line in August. UTMB takes place over 7 days and hosts four other events, ranging from a 50km ultra to a 350km team event. The races have strict entry and qualification requirements. Hopeful participants must accumulate enough race points to qualify, gained in other trail races over the previous two years. As of 2020, you need a minimum of 10 UTMB points (which must come from only two races) to enter the ballot for the main event. While the best runners complete the loop in just over 20 hours, most runners take 32 to 46 hours to reach the finish line. Most runners will also have to run through two nights in order to complete the race.",
+  website: "https://www.badwater.com/",
+  lat: 36.23131057832886,
+  lng: -116.7660672234456
+  }];
 
 $("#race").change(function() {
-  if ($(this).val() == 'Marathon du Mont Blanc')
+
+    let selRace = document.getElementById("race").value; //if user selects default add a default object so is defined
+    /*console.log(selRace);*/
+
+    let race = races.find(race => race.name === selRace);
+
+    raceLocation(race.lat, race.lng);
+
     $("#race-information").empty().append(
       `<div>
-        <h2>Marathon du Mont Blanc</h2>
-        <p>Country: France<br>Marathon du Mont Blanc is a well established montain ultra marathon event. A stunning route through the French Alps<br>Difficulty Rating : 10<br>Website: <a href="https://www.marathonmontblanc.fr/en/" target="_blank">Marathon du Mont Blanc</a></p>
+        <h2>${race.name}</h2>
+        <p>${race.location}</p>
+        <p>${race.distance}</p>
+        <p>${race.elevation}</p>
+        <p>${race.terrain}</p>
+        <p>${race.difficulty}</p>
+        <p>${race.description}</p>
+        <p><a href="${race.website}" target="_blank">Website</a></p>
       </div>`
     );
-  else if ($(this).val() == 'Badwater')
-    $("#race-information").empty().append(
-      `<div>
-      <h2>Badwater</h2>
-      <p>Country: US<br>Badwater is one of the toughest races in the world.<br>Difficulty Rating : 10<br>Website: <a href="https://www.badwater.com" target="_blank">Badwater</a></p>
-      </div>`
-    );
-});
+})
