@@ -52,12 +52,29 @@ const locations = [
   ['Scotland', 'Pentland Hills', 55.858665239194174, -3.2315192071299856],
   ['Scotland', 'Clyde Muirshiel Park', 55.82497230294758, -4.776710253448487],
   ['Scotland', 'Loch Lomond & The Trossacs', 56.236460410102005, -4.686699127162885],
-  ['Scotland', 'Cairngorms', 57.04782573618609, -3.573834279426089]
+  ['Scotland', 'Cairngorms', 57.04782573618609, -3.573834279426089],
+  ['Northern Ireland', 'Giants Causeway', 55.240463723388004, -6.498146280069479],
+  ['Northern Ireland', 'Rostrevor Forest', 54.13899738516855, -6.150875314806672],
+  ['Northern Ireland', 'Mourne Mountains', 54.15206848753517, -6.062813028122196],
+  ['Northern Ireland', 'Torr Head', 55.19473220546214, -6.07311271074085659],
+  ['Northern Ireland', 'Denseverick', 55.23778157807357, -6.439597346627253],
+  ['Northern Ireland', 'Tollymore Forest Park', 54.22567340554185, -5.940803432686437],
+  ['Republic of Ireland', 'Glenveagh National Park', 55.04931671928791, -7.9370742434117405],
+  ['Republic of Ireland', 'Ballycroy National Park', 54.02496377992853, -9.736943782680545],
+  ['Republic of Ireland', 'Burren National Park', 52.99778977792347, -9.039183198436554],
+  ['Republic of Ireland', 'Dromore Woods', 52.93853751586066, -8.958931504738528],
+  ['Republic of Ireland', 'Slieve Bloom Mountains', 53.07488325737644, -7.6044374099129115],
+  ['Republic of Ireland', 'Brandon Point', 52.28762519287021, -10.170345841823707],
+  ['Republic of Ireland', 'Galtymore', 52.20859111740784, -10.054989396785857],
+  ['Republic of Ireland', 'Glanteenassig Forest Park', 52.37071104378556, -8.16774421849087],
+  ['Republic of Ireland', 'Gleninchaquin Park', 51.80238074185464, -9.663020794225595],
+  ['Republic of Ireland', 'Table Mountain', 53.01477155520673, -6.482620384240017],
+  ['Republic of Ireland', 'Turlough Hill', 53.024182184694745, -6.414076481283859]
 ];
 
 /* --------------------------- INITIALIZE MAPS */
 
-var map, eventMap;
+var map, raceMap;
 
 function initMap() {
 

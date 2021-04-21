@@ -8,17 +8,6 @@ body {
   padding: 0;
 }
 
-.panel {
-  background-color: #FFFFFF;
-  color: #666;
-  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
-  overflow: auto;
-}
-
-button {
-  border: none;
-}
-
 body, button {
     font-family: 'Roboto', sans-serif;
 }
@@ -32,7 +21,7 @@ h2 {
   color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 200%;
+  font-size: 400%;
   line-height: 1.0em;
 }
 
@@ -118,7 +107,7 @@ button.navbar-toggler {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     height: 100vh;
     display: flex;
     width: 100vw;
@@ -194,34 +183,41 @@ button.navbar-toggler {
   }
 }
 
-/* Ddapted from - http://www.javascriptbook.com/ */
+/* Adapted from - http://www.javascriptbook.com/ */
 
 /* --------------------------- SLIDER */
 .slider {
-  max-width: 940px;
-  margin: 0px auto 30px auto;}
+    max-width: 1000px;
+    height: 667;
+    margin: 0px auto 30px auto;
+  }
 
 .slide-viewer {
     position: relative;
     overflow: hidden;
-    height: 430px;}
+    height: 667px;
+  }
 
 .slide-group {
     width: 100%;
     height: 100%;
-    position: relative;}
+    position: relative;
+  }
 
 .slide {
     width: 100%;
     height: 100%;
     display: none;
-    position: absolute;}
+    position: absolute;
+  }
 
 .slide:first-child {
-    display: block;}
+    display: block;
+  }
 
 .slide-buttons {
-  text-align: center;}
+  text-align: center;
+}
 
 .slide-btn {
   border: none;
@@ -238,8 +234,8 @@ button.navbar-toggler {
 .slide-viewer h2 {
   position: absolute;
   top: 65%;
-  right: 0%;
   width: 100%;
+  font-size: 200%;
   text-align: center;
   color:#FFFFFF;
 }
@@ -248,10 +244,16 @@ button.navbar-toggler {
   position: absolute;
   font-style: italic;
   top: 75%;
-  right: 0%;
   width: 100%;
+  font-size: 120%;
   text-align: center;
   color:#FFFFFF;
+}
+
+@media all and (max-width: 736px) {
+  .slide-viewer {
+    max-height: 367px;
+  }
 }
 
 /* --------------------------- GET STARTED SECTION */
@@ -362,8 +364,9 @@ button.navbar-toggler {
   padding: 30px 30px 30px 30px;
 }
 
-#newsletterModalTitle {
+#newsletterModalTitle, h2 {
   color: #4B5657;
+  font-size: 150%;
 }
 .newsletter-group{
   padding-top: 10px;
