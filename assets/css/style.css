@@ -236,8 +236,6 @@ max-height: 550px;
 .map-section {
   height: 100vh;
   max-width: 1600px;
-  /*margin: 0;
-  padding: 0;*/
 }
 
 .map-container {
@@ -305,6 +303,14 @@ max-height: 550px;
   background-size: cover;
   opacity: 1.0;
   width: 100vw;
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
+  #races-image {
+    background-attachment: scroll;
+    /* Fix parralax image display on Safari / iOS */
+  }
 }
 
 .newsletter-section {
@@ -383,6 +389,14 @@ max-height: 550px;
   background-size: cover;
   opacity: 1.0;
   width: 100vw;
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
+  #divider-image {
+    background-attachment: scroll;
+    /* Fix parralax image display on Safari / iOS */
+  }
 }
 
 /* --------------------------- FOOTER */
