@@ -90,10 +90,10 @@ function initMap() {
 
   $("#race-information").empty().append(
     `<div>
-      <h2>The Best Races Around the World</h2>
-      <p>If you are ready for a challange there are some amazing events around the world. </p>
-      <p>More text relating to the events</p>
-      <p>Select a region and an event to find out more.</p>
+      <h2>Races Around the World</h2>
+      <p>Due to the explosion in popularity of trail running over the past 15 years more races are added to the race calendar every year. There are some incredible events all over the world.</p>
+      <p>There are races on all continents and over all types of terrain - trails, deserts, mountains, jungle or mixed terrains - you will find an event that tests your ability and that provides an incredible experience.</p>
+      <p>Select a region and a race to find your next adventure.</p>
     </div>`
   );
 
@@ -111,9 +111,12 @@ function initMap() {
   for (var i = 0; i < locations.length; i++) {
     var trails = new google.maps.Marker({
       position: new google.maps.LatLng(locations[i][2], locations[i][3]),
-      map: map
+      map: map,
+      title: locations[i][1]
     });
+
     markers.push(trails);
+
   }
 
   // cluster markers for improved user experience
@@ -372,3 +375,15 @@ function raceLocation(raceLat, raceLng) {
     });
     markers.push(marker);
 }
+
+
+function addInfoWindow(marker, message) {
+
+            var infoWindow = new google.maps.InfoWindow({
+                content: message
+            });
+
+            google.maps.event.addListener(marker, 'click', function () {
+                infoWindow.open(map, marker);
+            });
+        }

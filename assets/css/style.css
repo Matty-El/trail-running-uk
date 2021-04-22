@@ -3,20 +3,10 @@
 /* --------------------------- GENERAL */
 
 body {
-  background-color: #979797;
+  background-color: #333333; /*#979797;*/
   margin: 0;
   padding: 0;
 }
-
-.page {
-  max-width: 640px;
-  margin: 0 auto 30px auto;}
-
-.panel {
-  background-color: #fff;
-  color: #666;
-  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
-  overflow: auto;}
 
 body, button {
     font-family: 'Roboto', sans-serif;
@@ -28,7 +18,7 @@ h2, h3 {
 }
 
 h2 {
-  color: #FFFFFF;
+  color: #FEFEFE;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   font-size: 400%;
@@ -59,18 +49,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Dividers */
-.divider {
-  background-color: #282E34;
-  height: 20vh;
-}
-
 /* --------------------------- NAVIGATION */
-
-/*.navbar {
-  position: absolute;
-  top: 0;
-}*/
 
 .navbar-fixed {
     position: fixed;
@@ -78,23 +57,23 @@ html {
     right: 0;
     left: 0;
     z-index: 1030;
-    background-color: #ffffff;
+    background-color: #333333;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #000000;
+.nav-link:focus, .nav-link:hover {
+    color: #efefef !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
   font-weight: 600;
   font-size: 22px;
-  color: #444444;
+  color: #efefef;
   border-radius: 5px;
 }
 
 .navbar-toggler-icon {
-  color: #444444;
-  background-color: #444444;
+  color: #efefef;
+  background-color: #efefef;
   z-index: 1;
 }
 
@@ -123,7 +102,7 @@ button.navbar-toggler {
     width: 100vw;
     padding: 0;
     margin-top: 56px;
-    opacity: 0.65;
+    opacity: 1.0;
     position: relative;
 }
 
@@ -136,8 +115,9 @@ button.navbar-toggler {
   top: 65%;
   right: 0%;
   width: 100%;
+  font-size: 300%;
   text-align: center;
-  color:#FFFFFF;
+  color:#FEFEFE;
 }
 
 @media (min-width: 1px) and (max-width: 1024px) {
@@ -149,13 +129,56 @@ button.navbar-toggler {
 /* --------------------------- WHY TRAIL RUNNING SECTION */
 
 #why {
-  margin-top: 40px;
+  padding-top: 40px;
+}
+
+/* Carousel */
+
+.carousel-inner img{
+display:inline-block  !important;
+max-height: 550px;
+}
+
+/* Contain images in div https://stackoverflow.com/questions/13395028/bootstrap-carousel-images-out-of-div-when-sliding*/
+
+.carousel-inner > .next {
+    display: none;
+ }
+ .carousel-inner > .prev {
+    display: none;
+ }
+
+.carousel-caption h2 {
+  font-size: 200%;
+  color: #FEFEFE;
+}
+
+.carousel-caption p {
+  color: #FEFEFE;
+  font-style: italic;
+}
+
+.container {
+  padding-bottom: 15px;
+}
+
+@media all and (max-width: 414px) {
+  .carousel-caption h2 {
+    font-size: 100%
+  }
+  .carousel-caption p {
+    font-size: 50%
+  }
 }
 
 /* Quotes */
 
+#quote {
+  display: none;
+}
+
 .quotes-container {
-  margin: 40px auto;
+  margin: 20px auto;
   text-align: center;
   min-height: 250px;
   width: 275px;
@@ -163,7 +186,7 @@ button.navbar-toggler {
 
 .quotes-container p {
   margin: auto;
-  color: #FFFFFF;
+  color: #FEFEFE;
   font-size: 16px;
   font-style: italic;
   font-family: 'Roboto', sans-serif;
@@ -189,43 +212,6 @@ button.navbar-toggler {
   }
 }
 
-/* Carousel */
-
-.carousel-inner img{
-display:inline-block  !important;
-}
-
-/* Contain images in div https://stackoverflow.com/questions/13395028/bootstrap-carousel-images-out-of-div-when-sliding*/
-
-.carousel-inner > .next {
-    display: none;
- }
- .carousel-inner > .prev {
-    display: none;
- }
-
-.carousel-caption h2 {
-  font-size: 200%;
-  color: #FFFFFF;
-}
-
-.carousel-caption p {
-  color: #FFFFFF;
-  font-style: italic;
-}
-
-.container {
-  padding-bottom: 15px;
-}
-
-@media all and (max-width: 414px) {
-  .carousel-caption h2 {
-    font-size: 100%
-  }
-  .carousel-caption p {
-    font-size: 50%
-  }
-}
 /* --------------------------- GET STARTED SECTION */
 
 #map-image {
@@ -235,7 +221,7 @@ display:inline-block  !important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.70;
+  opacity: 1.0;
   width: 100vw;
 }
 
@@ -250,8 +236,8 @@ display:inline-block  !important;
 .map-section {
   height: 100vh;
   max-width: 1600px;
-  margin: 0;
-  padding: 0;
+  /*margin: 0;
+  padding: 0;*/
 }
 
 .map-container {
@@ -263,36 +249,43 @@ display:inline-block  !important;
 #map, #race-map {
   min-height: 450px;
   /* remember to condense code */
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
 #information p, #race-information p {
-  color: #FFFFFF;
+  color: #FEFEFE;
   margin-top: 50px;
   margin-left: 30px;
   margin-right: 30px;
-  /*text-align: justify;*/
 }
 
 #information h2, #race-information h2 {
-  color: #FFFFFF;
+  color: #FEFEFE;
+  font-size: 200%;
   margin-left: 30px;
   margin-right: 30px;
+  margin-bottom: 60px;
 }
 
-.race-search, .race-search h3 {
+/* --------------------------- RACE SECTION */
+
+.race-search, .race-search {
   display: inline-block;
-  color: #FFFFFF
+  margin: 10px;
+  color: #FEFEFE
+}
+
+.race-select {
+  margin: 5px;
 }
 
 .btn {
   margin: 5px;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
   #information, #race-information {
     text-align: center;
   }
@@ -385,7 +378,7 @@ display:inline-block  !important;
 footer {
   display: flex;
   font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
+  color: #FEFEFE;
   background-color: #000000;
   width: 100vw;
   position: relative;
@@ -404,7 +397,7 @@ footer {
 }
 
 .copyright i {
-  color: #FFFFFF;
+  color: #FEFEFE;
 }
 
 .fa-copyright {
@@ -424,7 +417,7 @@ footer {
 
 .social-media i {
   font-size: 28px;
-  color: #FFFFFF;
+  color: #FEFEFE;
   padding-top: 20px
 }
 
