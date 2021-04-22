@@ -295,7 +295,7 @@ max-height: 550px;
 
 /* --------------------------- NEWSLETTER FORM */
 #races-image {
-  background: url("../images/peak-district-cliffs-medium.jpeg");
+  background: url("../images/trail.jpg");
   height: 40vh;
   background-attachment: fixed;
   background-position: center;
@@ -381,7 +381,7 @@ max-height: 550px;
 /* --------------------------- DIVIDER */
 
 #divider-image {
-  background: url("../images/pembrokeshire-coast-medium.jpeg");
+  background: url("../images/trail.jpg");
   height: 40vh;
   background-attachment: fixed;
   background-position: center;
