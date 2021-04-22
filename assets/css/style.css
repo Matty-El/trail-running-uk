@@ -216,11 +216,14 @@ max-height: 550px;
 
 #map-image {
   background: url("../images/trail.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 40vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   opacity: 1.0;
   width: 100vw;
 }
@@ -231,11 +234,6 @@ max-height: 550px;
     background-attachment: scroll;
     /* Fix parralax image display on Safari / iOS */
   }
-}
-
-.map-section {
-  height: 100vh;
-  max-width: 1600px;
 }
 
 .map-container {
@@ -279,6 +277,11 @@ max-height: 550px;
   margin: 5px;
 }
 
+.race-section {
+  height: 100vh;
+  max-width: 1600px;
+}
+
 .btn {
   margin: 5px;
 }
@@ -295,12 +298,15 @@ max-height: 550px;
 
 /* --------------------------- NEWSLETTER FORM */
 #races-image {
-  background: url("../images/trail.jpg");
+  background: url("../images/peak-district-cliffs-medium.jpeg");
   height: 40vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   opacity: 1.0;
   width: 100vw;
 }
@@ -314,10 +320,8 @@ max-height: 550px;
 }
 
 .newsletter-section {
-  background-color: white;
-  text-align: center;
-  position: relative;
-  display: flex;
+  height: 100vh;
+  max-width: 1600px;
 }
 
 .newsletter-group {
@@ -381,12 +385,12 @@ max-height: 550px;
 /* --------------------------- DIVIDER */
 
 #divider-image {
-  background: url("../images/trail.jpg");
+  background: url("../images/pembrokeshire-coast-medium.jpeg");
   height: 40vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   opacity: 1.0;
   width: 100vw;
 }
