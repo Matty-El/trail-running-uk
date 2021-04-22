@@ -227,7 +227,7 @@ max-height: 550px;
 
 @supports (-webkit-touch-callout: none) {
   /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
-  #hero-image, #map-image, #newsletter-image {
+  #hero-image, #map-image, #races-image, #divider-image {
     background-attachment: scroll;
     /* Fix parralax image display on Safari / iOS */
   }
