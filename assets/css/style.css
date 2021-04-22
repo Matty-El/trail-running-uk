@@ -296,16 +296,16 @@ max-height: 550px;
 }
 
 /* --------------------------- NEWSLETTER FORM */
-.newsletter-image {
+.races-image {
   background: url("../images/peak-district-cliffs-medium.jpeg");
   height: 40vh;
   position: relative;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  opacity: 0.70;
+  opacity: 1.0;
 }
 
 .newsletter-section {
@@ -373,6 +373,19 @@ max-height: 550px;
   margin-left: 0px;
 }
 
+/* --------------------------- DIVIDER */
+
+.divider-image {
+  background: url("../images/pembrokeshire-coast-medium.jpeg");
+  height: 40vh;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  opacity: 1.0;
+}
 
 /* --------------------------- FOOTER */
 footer {
