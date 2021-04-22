@@ -228,14 +228,6 @@ max-height: 550px;
   width: 100vw;
 }
 
-@supports (-webkit-touch-callout: none) {
-  /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
-  #hero-image, #map-image, #races-image, #divider-image {
-    background-attachment: scroll;
-    /* Fix parralax image display on Safari / iOS */
-  }
-}
-
 .map-container {
   max-width: 1600px;
   padding-top: 50px;
@@ -309,14 +301,6 @@ max-height: 550px;
   background-repeat: no-repeat;
   opacity: 1.0;
   width: 100vw;
-}
-
-@supports (-webkit-touch-callout: none) {
-  /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
-  #races-image {
-    background-attachment: scroll;
-    /* Fix parralax image display on Safari / iOS */
-  }
 }
 
 .newsletter-section {
@@ -393,14 +377,6 @@ max-height: 550px;
   background-size: 100% 100%;
   opacity: 1.0;
   width: 100vw;
-}
-
-@supports (-webkit-touch-callout: none) {
-  /* Code from Stack Overflow. Source: https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
-  #divider-image {
-    background-attachment: scroll;
-    /* Fix parralax image display on Safari / iOS */
-  }
 }
 
 /* --------------------------- FOOTER */
