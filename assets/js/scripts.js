@@ -43,8 +43,6 @@ document.getElementById("top").addEventListener("click", function() {
 
 /* --------------------------- QUOTES */
 
-// Load first quote on page load
-
 function quote() {
 
   var quotes = [
@@ -70,12 +68,11 @@ function quote() {
     $("#quote").fadeOut(2000, function() {
       $("#quote").fadeIn(2000).html(quotes[quotesIndexNum]);
     });
-
   }
 
   setInterval(newQuote, 15000);
-
 }
+
 $("document").ready(function() {
   quote();
 });
@@ -178,4 +175,4 @@ $("#race").change(function() {
 
 $("#newsletter-form").on("hidden.bs.modal", function () {
     $(this).find("newsletter-form").trigger("reset");
-})
+  })
