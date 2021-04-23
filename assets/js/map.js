@@ -141,7 +141,7 @@ function localClubs() {
     </div>`
   );
 
-// Adapted from Google Maps API documentation https://developers.google.com/maps/documentation/javascript/geolocation
+  // Adapted from Google Maps API documentation https://developers.google.com/maps/documentation/javascript/geolocation
 
   // Initialize variables
   bounds = new google.maps.LatLngBounds();
@@ -361,29 +361,28 @@ function showDetails(placeResult, marker, status) {
 // Race map
 function raceLocation(raceLat, raceLng) {
 
-    raceMap.setCenter({
+  raceMap.setCenter({
+    lat: raceLat,
+    lng: raceLng,
+  });
+  raceMap.setZoom(7);
+  var marker = new google.maps.Marker({
+    position: {
       lat: raceLat,
-      lng: raceLng,
-    });
-    raceMap.setZoom(7);
-    var marker = new google.maps.Marker({
-      position: {
-        lat: raceLat,
-        lng: raceLng
-      },
-      map: raceMap
-    });
-    markers.push(marker);
+      lng: raceLng
+    },
+    map: raceMap
+  });
+  markers.push(marker);
 }
-
 
 function addInfoWindow(marker, message) {
 
-            var infoWindow = new google.maps.InfoWindow({
-                content: message
-            });
+  var infoWindow = new google.maps.InfoWindow({
+    content: message
+  });
 
-            google.maps.event.addListener(marker, 'click', function () {
-                infoWindow.open(map, marker);
-            });
-        }
+  google.maps.event.addListener(marker, 'click', function() {
+    infoWindow.open(map, marker);
+  });
+}
