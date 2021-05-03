@@ -69,7 +69,6 @@ html {
 }
 
 .navbar-toggler-icon {
-  color: #efefef;
   background-color: #efefef;
 }
 
@@ -157,7 +156,6 @@ button.navbar-toggler {
 
 .carousel-caption h2 {
   font-size: 300%;
-  font-style: bold;
   color: #efefef;
 }
 
