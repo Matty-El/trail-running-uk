@@ -533,3 +533,11 @@ $("#newsletter-form").on("hidden.bs.modal", function() {
 })
 
 // form submission
+
+// Fix for iPhone and iPads - parallax effect and image zoom issues - https://stackoverflow.com/questions/19045364/fixed-body-background-scrolls-with-the-page-on-ios7
+
+if (iosVersion >= 7) {
+    $(document).scroll(function() {
+        $('#background').css('background-position', '0px ' + $(document).scrollTop() + 'px');
+    });
+}

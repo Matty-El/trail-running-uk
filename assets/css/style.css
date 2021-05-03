@@ -198,11 +198,11 @@ button.navbar-toggler {
 }
 
 /* Set to scroll on smaller devices to prevent parallax / image zoom issue on iPhones and iPads*/
-@media all and (max-width: 1024px) {
+/*@media all and (max-width: 1024px) {
   #map-image {
     background-attachment: scroll;
   }
-}
+}*/
 
 .map-container {
   max-width: 1500px;
@@ -296,11 +296,11 @@ button.navbar-toggler {
 }
 
 /* Set to scroll on smaller devices to prevent parallax / image zoom issue on iphones and ipads*/
-@media all and (max-width: 1024px) {
+/*@media all and (max-width: 1024px) {
   #races-image {
     background-attachment: scroll;
   }
-}
+}*/
 
 #pref-distance {
   margin-top: 20px;
@@ -394,11 +394,11 @@ button.navbar-toggler {
 
 
 /* Set to scroll on smaller devices to prevent parallax / image zoom issue on iphones and ipads*/
-@media all and (max-width: 1024px) {
+/*@media all and (max-width: 1024px) {
   #divider-image {
     background-attachment: scroll;
   }
-}
+}*/
 
 /* --------------------------- FOOTER */
 
