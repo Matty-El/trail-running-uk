@@ -162,7 +162,7 @@ const races = [{
     elevation: "10,074",
     terrain: "Mountains",
     difficulty: "Hard",
-    description: "Hardrock 100 is a looped course of dirt trails and cross country running along the San Juan Range of the Rocky Mountains. With an elevation gain of more than 10,000m and 13 high points above 3,700m, this is a difficult race. The terrain is extremely rugged with steep scree climbing and descending, snow, river crossings and boulder fields. The average finish time is 40 hours and to complete the course, runners must kiss the infamous ‘Hardrock’ at the end.Designed to provide extreme challenges in altitude, steepness, and remoteness - mountaineering, wilderness survival and navigation skills are as important in this event as endurance.",
+    description: "Hardrock 100 is a looped course of dirt trails and cross country running along the San Juan Range of the Rocky Mountains. With an elevation gain of more than 10,000m and 13 high points above 3,700m, it is a difficult race. The terrain is extremely rugged with steep scree climbing and descending, snow, river crossings and boulder fields. The average finish time is 40 hours and to complete the course, runners must kiss the infamous ‘Hardrock’ at the end. Designed to provide extreme challenges in altitude, steepness, and remoteness - mountaineering, wilderness survival and navigation skills are as important in this event as endurance.",
     website: "https://hardrock100.com/",
     lat: 37.81455666839844,
     lng: -107.66095105522486
@@ -174,7 +174,7 @@ const races = [{
     elevation: "1,683m",
     terrain: "Desert",
     difficulty: "Hard",
-    description: "This race takes competitors across the Atacama Desert in Chile, the driest place on earth. The route combines rugged terrain with a harsh climate, where daytime temperatures often reach 40°C and the average altitude is 2,500m. It is a self-supported race, requiring competitors to carry everything they need for seven days on their backs. Runners travel through slot canyons and valleys, ancient Incan roads, salt lakes, small Chilean villages, over sand dunes, salt flats and rivers, surrounded by a range of stunning volcanoes.",
+    description: "This race takes competitors across the Atacama Desert in Chile, the driest place on earth. The route combines rough terrain an a harsh climate. Temperatures often reach 40°C and the average altitude is 2,500m. It is a self-supported race with competitors required to carry everything they need for the seven day event. Racers travel through canyons and valleys, along ancient Incan roads, through small villages, over sand dunes, salt flats and rivers, all surrounded by a range of stunning volcanoes.",
     website: "https://www.racingtheplanet.com/atacamacrossing",
     lat: -22.641471247821155,
     lng: -68.23951322441216
@@ -186,7 +186,7 @@ const races = [{
     elevation: "5,8oom",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "Ultra X 125 Azores is run on one of nine islands in the Azores archipelago, based 1,000 miles into the Atlantic Ocean, and travels along trails past volcanoes, green valleys and stunning lagoons. Runners begin under Ponta Delgada’s main city gates at 5am on Saturday morning and head out of the city into the hills. Saturday night is spent at a seaside campsite and Sunday is the marathon stage before the finisher's BBQ and prize giving back in the city.",
+    description: "Ultra X 125 Azores is run on one of nine islands in the Azores. The route passes along trails past volcanoes, through green valleys and past stunning lagoons. The start of the race is under Ponta Delgada’s main city gates at 5am on Saturday morning and runners head out of the city into the hills. Saturday night is spent at a seaside campsite and Sunday is the marathon stage before the finisher's BBQ and prize giving.",
     website: "https://ultra-x.co/azores-125/",
     lat: 37.78405321344546,
     lng: -25.46215372290702
@@ -198,7 +198,7 @@ const races = [{
     elevation: "7,500m",
     terrain: "Mountains",
     difficulty: "Hard",
-    description: "The Ultra-Trail Mt. Fuji starts out at Ohike Kouen, and race covers the entire circumference of Mt. Fuji through undulating mountain trails, local footpaths and forest roads. In order to complete the race, runners head anti clockwise into Kawaguchiko, Fujikawaguchiko-cho, and then into Yamanashi Prefecture. This is not a race for first timers!",
+    description: "The Ultra-Trail Mt. Fuji starts out at Ohike Kouen, and race covers the entire circumference of Mt. Fuji and is run through undulating mountain trails, local footpaths and forest roads. In order to complete the race, runners head anti clockwise into Kawaguchiko, Fujikawaguchiko-cho, and then into Yamanashi Prefecture. This is not a race for the less experienced ultra runner!",
     website: "https://www.ultratrailmtfuji.com/en/",
     lat: 35.25476823897006,
     lng: 138.77502779776023
@@ -210,7 +210,7 @@ const races = [{
     elevation: "687m",
     terrain: "Trail",
     difficulty: "Intermediate",
-    description: "The Ultra X Sri Lanka is a five day multi stage ultra marathon and the only event of its type. It takes runners through tea plantations, 10,000 year old rainforests and down rushing rivers. During the week competitors will get to experience the place, the people, and the beauty of this iconic country, steeped in rich history and colour.",
+    description: "The Ultra X Sri Lanka is a five day multi stage ultra marathon and the only event of its type. It takes runners through tea plantations, ancient rainforests and down rushing rivers. During the week competitors will get to experience the people, the beauty of this iconic country that is steeped in a rich history.",
     website: "https://ultra-x.co/sri-lanka/",
     lat: 6.440416108573715,
     lng: 80.8898559602463
@@ -222,7 +222,7 @@ const races = [{
     elevation: "28,000m",
     terrain: "Mountains",
     difficulty: "Hard",
-    description: "The Everest Trail Race ranks as one of the most unique multi-stage ultras in the world. It is a partially supported multi stage ultra marathon, with a change in altitude of more than 28,000m! Runners carry their clothing and sleeping bag over the course and the organisation supports them with food, accommodation and logistical support throughout the race. Entry is very expensive at £2,750 excluding flights.",
+    description: "The Everest Trail Race ranks as one of the most unique multi-stage ultras in the world. It is a partially supported multi stage ultra marathon, with an altitude change of more than 28,000m. Runners carry their clothing and sleeping bag over the course with the race organisation providing food, accommodation and logistical support. This is an expensivce race to enter at £2,750 excluding flights.",
     website: "https://everesttrailrace.co.uk/",
     lat: 27.897826077486098,
     lng: 86.77899949092938
@@ -234,7 +234,7 @@ const races = [{
     elevation: "9,500m",
     terrain: "Mountains",
     difficulty: "Hard",
-    description: "Gaoligong by UTMB is based around one of most famous Taoist mountains in China in the Sichuan province and the gateway to Tibet. Finishing the 100 mile distance gives runners a guaranteed entry to the coveted UTMB.",
+    description: "Gaoligong by UTMB is run around one of most famous Taoist mountains in China in the Sichuan province and the gateway to Tibet. Finishing the 100 mile distance gives runners a guaranteed entry to the coveted UTMB.",
     website: "https://utmbmontblanc.com/en/mag/177/",
     lat: 24.895611654987476,
     lng: 101.41101612057562
@@ -242,11 +242,11 @@ const races = [{
   {
     name: "La Ultra – The High",
     location: "India",
-    distance: "555km",
+    distance: "111km, 222km and 333km",
     elevation: "26,670m",
     terrain: "Mountains",
     difficulty: "Brutal",
-    description: "This multi stage ultra marathon takes place on the Great Himalayan range of India and could possibly be the most brutal in the world. Most of the run is done with 50% less oxygen than at sea level, temperatures can vary from from -12 to 40°C and its highest point is 5,359m above mean sea level. The race is non-stop with categories of 111km, 222km and 333km.",
+    description: "This multi stage ultra marathon takes place on the Great Himalayan range of India and is possibly be the most brutal in the world. Most of the run is done with 50% less oxygen than at sea level, temperatures can vary from from -12 to 40°C and the highest point in the race is 5,359m above sea level. The race is non-stop with three categories of 111km, 222km and 333km.",
     website: "https://www.laultra.in/",
     lat: 34.68560707643709,
     lng: 77.56951945508497
@@ -258,7 +258,7 @@ const races = [{
     elevation: "4,300m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "This route showcases the very best of Cape Town and includes traversing sections of Table Mountain, Lion’s Head, Signal Hill, Orangekloof, Llandudno and Devils Peak. Due to the location, there is a tight cut off time of 17 hours for the 100km event. There are four race options from half marathon to 100km, so there is something for everyone.",
+    description: "This route shows the very best of Cape Town and includes traversing sections of Table Mountain, Lion’s Head, Signal Hill, Orangekloof, Llandudno and Devils Peak. There is a tight cut off time of 17 hours for the 100km event. There are four race options from half marathon to 100km, so there is something for every level of runner.",
     website: "https://www.ultratrailcapetown.com/",
     lat: -33.99856173756557,
     lng: 18.52682304879638
@@ -270,7 +270,7 @@ const races = [{
     elevation: "7,500m",
     terrain: "Trail",
     difficulty: "Intermediate",
-    description: "‘Transgran’ crosses the island of Gran Canaria from North to South and from Coast to Coast. Runners can expect all the glamour that comes with UTWT recognition including a beach start at 11pm on Friday night! The first edition of the event in 2003 featured just 65 participants, yet over the years it has grown to more than 3,000 athletes, walkers, joggers and nature lovers from more than 70 countries.",
+    description: "‘Transgran’ crosses the island of Gran Canaria from North to South and from coast to coast. The race includes a beach start at 11pm on the Friday night. The race started in 2003 with just 65 participants but over the years it has grown to more than 3,000 participants from more than 70 countries.",
     website: "https://www.transgrancanaria.net/en/",
     lat: 28.1430109121253,
     lng: -15.433183894674064
@@ -282,7 +282,7 @@ const races = [{
     elevation: "9,643m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "Also called La Diagonale des Fous (The Madmen Diagonal) is a mountain ultramarathon on Réunion Island, situated between Madagascar and Mauritius. The 162km route has 9,643m of elevation gain is brutally difficult and one of the hardest footraces in the world. Runners can expect volcanoes, waterfalls, lush green forests and tropical beaches and weather conditions offering an amazing, albeit challenging, experience.",
+    description: "Also called La Diagonale des Fous (The Madmen Diagonal) is a mountain ultramarathon on Réunion Island, situated between Madagascar and Mauritius. The 162km route has 9,643m of elevation and is incredibly difficult and is considered one of the hardest races in the world. Runners will pass by volcanoes, waterfalls, lush green forests and tropical beaches and weather conditions offering an amazing and challenging experience.",
     website: "https://www.grandraid-reunion.com/english/",
     lat: -21.128707379080893,
     lng: 55.49155821596959
@@ -306,7 +306,7 @@ const races = [{
     elevation: "2,000m",
     terrain: "Desert",
     difficulty: "Intermediate",
-    description: "For Rangers supports the rangers that protect Africa’s remaining giants and is a multi-stage race split over 5 stages covering 230km across five wildlife conservancies. All profits from the race goes entirely towards supporting the 2,500 rangers in the area. As a self-sufficient race, competitors are responsible for carrying their entire kit, including food, safety equipment and a minimum 2.5 litres of water.",
+    description: "For Rangers supports the park rangers that protect Africa’s remaining giants. This is a multi-stage race over 5 stages and covers 230km across five wildlife conservation areas. The profits from the race go entirely towards supporting the 2,500 rangers in the area. This is a self-sufficient race with competitors responsible for carrying their entire kit, food, safety equipment and a minimum 2.5 litres of water.",
     website: "https://www.forrangers.com/",
     lat: -1.4589891399784842,
     lng: 36.72916710925406
@@ -318,7 +318,7 @@ const races = [{
     elevation: "4,800m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "The Leadville Trail 100 follows the Colorado Trail and is a gruelling out-and-back route, combining technical terrain with long and steep climbs, the most famous of which is the 3,740m high Hope Pass. Beginning at 3,100m above sea level, the elevation continues up from there and runners often battle symptoms of hypoxia, hyponatremia and hypothermia.",
+    description: "The Leadville Trail 100 follows the Colorado Trail and is a gruelling out-and-back route. The route combines technical terrain with long and steep climbs, the most challenging of which is the ascent of the 3,740m high Hope Pass. This race starts at 3,100m above sea level, with the elevation continuing up from there. Runners often battle symptoms of hypoxia, hyponatremia and hypothermia during this extremely challenging race.",
     website: "https://www.leadvilleraceseries.com/run/leadvilletrail100run/",
     lat: 39.24804046161333,
     lng: -106.29690703101502
@@ -330,7 +330,7 @@ const races = [{
     elevation: "7,468m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "The HURT Trail 100-Mile Endurance Run (HURT 100) is a very difficult event designed for the adventurous and well-prepared ultrarunner. It is run on trails located in the mountains above the city of Honolulu (O‘ahu, Hawai‘i). The race is noted for its gruelling terrain and for a uniquely scenic course, with views of the O‘ahu coastline as well as the Pacific Ocean.",
+    description: "The HURT Trail 100-Mile Endurance Run (HURT 100) is a very difficult race only for the adventurous and well prepared ultrarunner. It is run on trails located in the mountains above the city of Honolulu. The race is famous for its extremely challenging terrain and for a incredibly scenic course, with stunning views of the O‘ahu coastline and the Pacific Ocean.",
     website: "https://hurt100.com/",
     lat: 21.330534236567033,
     lng: -157.88560073682214
@@ -342,7 +342,7 @@ const races = [{
     elevation: "36,600m",
     terrain: "Mountains",
     difficulty: "Brutal",
-    description: "The Barkley Marathon was bought to the fore a by the Netflix documentary, The Race That Eats Its Young. The course is 20 miles however many have put it closer to a marathon. To be a finisher, runners must complete the five loops in under 60 hours. The elevation is a massive 36,600m! The race start is signalled by blowing a conch shell in the middle of the night giving 1 hour notice, and requires competitors to collect pages from books hidden around the course to prove they’ve completed each loop.",
+    description: "The Barkley Marathon is a now legendary race and was brought to public attention by a Netflix documentary - The Race That Eats Its Young. The course is officially 20 miles but it is generally considered to be closer to a marathon in length. To finish the event runners must complete all five loops in under 60 hours. With a total elevation gain of 36,600m this is a very difficult and gruelling race. The race start is signalled by blowing a conch shell in the middle of the night giving the runners 1 hour notice. Competitors are required to collect pages from books hidden around the course to prove that they have completed each loop of the race.",
     website: "No website",
     lat: 36.12701289587364,
     lng: -84.42118938506238
@@ -354,7 +354,7 @@ const races = [{
     elevation: "5,499m",
     terrain: "Trail",
     difficulty: "Intermediate",
-    description: "The Grand to Grand is a multi stage race starting from north rim of the Grand Canyon, and traverses a high desert landscape of sand dunes, red rock canyons, buttes, mesas and hoodoos. Each day is around marathon distance with a huge 85km long-stage in the middle. The is expensive costing $3,550 but expect amazing views, coral pink sand dunes, two-billion-year-old rock formations and isolated slot canyons that few people on Earth have ever seen.",
+    description: "The Grand to Grand is a multi stage race starting from north rim of the Grand Canyon, and traversing a high desert landscape of sand dunes, canyons, buttes, mesas and hoodoos. Each day of the race is approximately marathon distance with a long 85km stage in the middle. The race is expensive to enter at $3,550 but competitors will enjoy amazing views, ancient geological rock formations and isolated canyons that few people will have ever seen.",
     website: "https://g2gultra.com/",
     lat: 36.209288564527995,
     lng: -112.06013155254627
@@ -366,7 +366,7 @@ const races = [{
     elevation: "5,000m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "This mountain ultra crosses one of the most beautiful and mysterious regions of Eastern Europe. Twisting single tracks, ancient forest trails, mountain plateaus and windswept ridges will link together in the Bucegi Range, climbing and descending many thousands of metres before finishing back at the Bran Castle, Dracula's home in Transylvania.",
+    description: "This mountain ultra is run in one of the most beautiful regions of Eastern Europe. Runners will experience twisting single track paths, ancient forest trails, mountains and windswept ridges as they run through the Bucegi Range, ascending and descending thousands of metres before a returning to the Bran Castle for the finish. Bran Castle is the Transylvanian home of Dracula.",
     website: "https://www.transylvania100k.com/",
     lat: 45.51442104915137,
     lng: 25.36883739832018
@@ -378,7 +378,7 @@ const races = [{
     elevation: "5,000m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "The Mozart 100 is a great option for those after great value for money and to experience the beautiful scenery made famous in the film The Sound of Music, starting and finishing in Kapitelplatz Square. For those who want a more leisurely run, there’s the Mozart Marathon, the Mozart Light and the Mozart Half Marathon. This race is for those looking for a challenging ultra but not looking to put themselves in hospital, this is a great race choice.",
+    description: "The Mozart 100 is a race for those looking for value for money and to experience the beautiful scenery made famous in the film The Sound of Music. The race starts and finishes in Kapitelplatz Square. There are multiple race distances included in this event with the Mozart Marathon, the Mozart Light and the Mozart Half Marathon as options for those that do not wish to run the full 108km distance. This is a great race for those runners looking for a challenge that is slightly less demanding than some of the other ultra races.",
     website: "https://www.mozart100.com/en/",
     lat: 47.771922261894936,
     lng: 13.355654859237529
@@ -387,10 +387,10 @@ const races = [{
     name: "Fire & Ice Ultra",
     location: "Iceland",
     distance: "250km (6 days)",
-    elevation: "“Not too much” (according to the race website)",
+    elevation: "“Not too much” (as stated on the race website)",
     terrain: "Trail",
     difficulty: "Intermediate",
-    description: "This race takes place over 6 stages with each stage offering a different distance. The longest day is 70km. This is an all-inclusive package and runners will sleep in tents provided by the race organisers each night. The race takes in steaming lava fields, ash covered mountains and the most powerful waterfall in the Northern Hemisphere. Multi-stage races are great adventures and we have no doubt that this event will be a fantastic experience for everyone.",
+    description: "This race is a 6 stage event with each stage offering a different distance with the longest stage at 70km. Between stages the runners sleep in tents provided by the race organisers. The race passes by lava fields, ash covered mountains and the most powerful waterfall in the Northern Hemisphere. Being a multi-stage race this is a great adventure and those that enter are guaranteed an amazing experience.",
     website: "https://www.extremeadventureraces.com/info/fireandiceultrarace/",
     lat: 64.78382483510778,
     lng: -17.206232472116614
@@ -402,7 +402,7 @@ const races = [{
     elevation: "11,300m",
     terrain: "Trail",
     difficulty: "Brutal",
-    description: "The Monte Rosa massif, boasts 10 summits over 4,000m and lies on the Swiss Italian border. It follows the trails of the Tour de Monte Rosa and takes runners on an epic adventure. As well as the single stage UTMR there are two other race options: a 4 day stage race which splits the course into four, more manageable, 30-50km days and a 100km ultra, but this sill has 6,420m of elevation gain.",
+    description: "The Monte Rosa massif has 10 summits over 4,000m and is situated on the border between Switzerland and Italy. The race route follows the trails of the Tour de Monte Rosa and takes runners on an incredible adventure. There are 3 race options, the single stage UTMR, a 4 day stage race which splits the course into four 30-50km days and a 100km ultra which although 70km shorter than the full race distance this event still has 6,420m of elevation gain.",
     website: "https://www.ultratourmonterosa.com/",
     lat: 45.93684614020497,
     lng: 7.870457591860179
@@ -414,7 +414,7 @@ const races = [{
     elevation: "24,000m",
     terrain: "Trail",
     difficulty: "Brutal",
-    description: "The Tor des Géants route runs along spectacular alpine trails, through the Gran Paradiso National and Mont Avic Regional Parks. Starting and finishing in Courmayeur, Italy, competitors attempt to cover the 205 miles/330km ahead of a cut-off time of 150 hours. The organisers have recently introduced a TOR450 to mark the 10th anniversary of the race. It’s 450km and has over 32,000m of elevation. Standard.",
+    description: "The Tor des Géants route passes along spectacular alpine trails through the Gran Paradiso National and Mont Avic Regional Parks. The race starts and finishes in Courmayeur, Italy, competitors attempt to cover the 330km ahead of a cut-off time of 150 hours. Recently the race organisers have introduced the TOR450 to mark the 10th anniversary of the race. This is a 450km race which has over 32,000m of elevation.",
     website: "https://www.tordesgeants.it/en/content/tor-des-g%C3%A9ants%C2%AE",
     lat: 45.79573652293625,
     lng: 6.974106667702274
@@ -426,7 +426,7 @@ const races = [{
     elevation: "n/a",
     terrain: "Jungle",
     difficulty: "Hard",
-    description: "A 230km race split into 5 stages of suffocating jungle undergrowth, river crossings and cloud shrouded mountain valleys. Over the week, runners will traverse the Amazon Rainforest of Manu National Park, from the Andes mountains to the Madre de Dios River. The Jungle Ultra is not for beginners with arduous undergrowth, deep mud, and river crossings. Competitors must also be self-sufficient, carrying all their kit and food for the week.",
+    description: "This 230km race is split over 5 stages of suffocating jungle, river crossings and cloud covered mountain valleys. Over the week long event unners will traverse the Amazon Rainforest in the Manu National Park running from the Andes mountains to the Madre de Dios River. This race is not for beginners with competitors tackling thick undergrowth, deep mud, and river crossings. Competitors must be self-sufficient and carry all supplies necessary to complete the event.",
     website: "https://beyondtheultimate.co.uk/ultra/jungle-ultra/#!/2021",
     lat: -12.042496026423258,
     lng: -71.72307911534153
@@ -462,7 +462,7 @@ const races = [{
     elevation: "7,189m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "Ultra Fiord is an international trail running event situated at the extreme southern end of Chilean Patagonia. Distances on offer are from 21km single stage to 136km multi-stage. Taking place in the mountains of the Torres del Paine National Park, this race brings long, narrow glacial inlets, mountain passes, rivers, peat bogs, rocks, and glacier crossings. Shaped by unpredictable weather conditions this race is like no other.",
+    description: "Ultra Fiord is a trail running event that takes place in the extreme southern end of Chilean Patagonia. There are mutiple distances on offer from the 21km single stage event to the 136km multi-stage race. The race passes through the mountains of the Torres del Paine National Park takes in long, narrow glacial inlets, mountain passes, rivers, peat bogs, rocks, and glacier crossings. The weather during this event is reknowned for being unpredictable so competitors need to need to be well prepared.",
     website: "https://www.ultrafiord.com/mobile-home/",
     lat: -50.94121750338105,
     lng: -73.4058866778276
@@ -474,7 +474,7 @@ const races = [{
     elevation: "7,629m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "The Chicamocha Canyon Race was Colombia’s first internationally recognised trail running event and now attracts more than 800 runners from all over the world with the option of a 100km or 100mile route. Heading north from San Gil, Santander, the route combines the forest, gorges and arid landscapes. Expect high temperatures, stream crossings, plenty of technical ascent and descent, and 6 shiny UTMB points for anyone who finishes the full distance.",
+    description: "The Chicamocha Canyon Race was the first internationally recognised trail running event to take place in Colombia and now attracts more than 800 competitors from around the world. There are two race options, 100km or a 100mile route. Runners head north from San Gil, Santander, the route combining forest, gorges and arid landscapes. This race is run on trails with technical ascents and descents and temperatures can soar during the event.",
     website: "https://chicamochacanyonrace.com/",
     lat: 6.557417843343337,
     lng: -73.13775240538115
@@ -483,8 +483,7 @@ const races = [{
 
 $("#race").change(function() {
 
-  let selRace = document.getElementById("race").value; //if user selects default add a default object so is defined
-  console.log(selRace);
+  let selRace = document.getElementById("race").value;
 
   let race = races.find(race => race.name === selRace);
 
