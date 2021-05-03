@@ -190,19 +190,12 @@ button.navbar-toggler {
   -o-background-size: cover;
   background-size: cover;
   background-position: top;
-  background-attachment: fixed;
+  background-attachment: scroll;
   height: 33vh;
   display: flex;
   width: 100vw;
   padding: 0;
 }
-
-/* Set to scroll on smaller devices to prevent parallax / image zoom issue on iPhones and iPads*/
-/*@media all and (max-width: 1024px) {
-  #map-image {
-    background-attachment: scroll;
-  }
-}*/
 
 .map-container {
   max-width: 1500px;
@@ -288,19 +281,11 @@ button.navbar-toggler {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   height: 33vh;
   display: flex;
   width: 100vw;
   padding: 0;
 }
-
-/* Set to scroll on smaller devices to prevent parallax / image zoom issue on iphones and ipads*/
-/*@media all and (max-width: 1024px) {
-  #races-image {
-    background-attachment: scroll;
-  }
-}*/
 
 #pref-distance {
   margin-top: 20px;
@@ -385,20 +370,11 @@ button.navbar-toggler {
   -o-background-size: cover;
   background-size: cover;
   background-position: bottom;
-  background-attachment: fixed;
   height: 33vh;
   display: flex;
   width: 100vw;
   padding: 0;
 }
-
-
-/* Set to scroll on smaller devices to prevent parallax / image zoom issue on iphones and ipads*/
-/*@media all and (max-width: 1024px) {
-  #divider-image {
-    background-attachment: scroll;
-  }
-}*/
 
 /* --------------------------- FOOTER */
 
