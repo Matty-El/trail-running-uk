@@ -3,46 +3,46 @@
 // Scroll to top on load
 // https://stackoverflow.com/questions/40481874/scroll-to-top-on-page-load-html
 
-$(window).on("beforeunload", function() {
-  $("body").hide();
-  $(window).scrollTop(0);
+$(window).on("beforeunload", function () {
+    $("body").hide();
+    $(window).scrollTop(0);
 });
 
 /* Hero section fade on scroll - https://stackoverflow.com/questions/51118337/how-do-i-make-an-image-fade-out-but-stay-in-place-on-scroll/ */
 
-$(window).scroll(function() {
-  $("#hero-image").css("opacity", 1.0 - $(window).scrollTop() / 300);
+$(window).scroll(function () {
+    $("#hero-image").css("opacity", 1.0 - $(window).scrollTop() / 300);
 });
 
 /* --------------------------- RACE SELECTOR */
 
 // Adapted from https://www.w3schools.com/howto/howto_js_cascading_dropdown.asp
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-  var regions = {
-    "Europe": ["Ultra-Trail du Mont-Blanc (UTMB)", "Eiger Ultra Trail", "Spartathlon", "Ultra X 125 Azores", "Transylvania 100k", "Mozart 100", "Fire & Ice Ultra", "UTMR (Ultra Tour Monte Rosa)", "Tor des Géants"],
-    "North America": ["Badwater 135", "Western States Endurance Run", "Hardrock 100", "Leadville Trail 100", "HURT100", "Barkley Marathons", "Grand to Grand"],
-    "South America": ["Atacama Crossing", "The Jungle Ultra", "Ushuaia by UTMB", "Brazil135+ Ultramarathon", "Ultra Fiord", "Chicamocha Canyon Race"],
-    "Africa": ["Marathon des Sables", "Comrades Marathon: The Ultimate Human Race", "Ultra-Trail Cape Town (UTCT)", "Grand Raid de la Réunion", "Transgrancanaria", "Salt Pans Ultra Marathon", "For Rangers"],
-    "Asia & Australasia": ["Ultra-Trail Australia (UTA)", "Ultra X Sri Lanka", "Everest Trail Race", "Gaoligong by UTMB", "La Ultra – The High", "Ultra-Trail Mt. Fuji"],
-    "Middle East": ["Ultra X Jordan"]
-  };
+    var regions = {
+        "Europe": ["Ultra-Trail du Mont-Blanc (UTMB)", "Eiger Ultra Trail", "Spartathlon", "Ultra X 125 Azores", "Transylvania 100k", "Mozart 100", "Fire & Ice Ultra", "UTMR (Ultra Tour Monte Rosa)", "Tor des Géants"],
+        "North America": ["Badwater 135", "Western States Endurance Run", "Hardrock 100", "Leadville Trail 100", "HURT100", "Barkley Marathons", "Grand to Grand"],
+        "South America": ["Atacama Crossing", "The Jungle Ultra", "Ushuaia by UTMB", "Brazil135+ Ultramarathon", "Ultra Fiord", "Chicamocha Canyon Race"],
+        "Africa": ["Marathon des Sables", "Comrades Marathon: The Ultimate Human Race", "Ultra-Trail Cape Town (UTCT)", "Grand Raid de la Réunion", "Transgrancanaria", "Salt Pans Ultra Marathon", "For Rangers"],
+        "Asia & Australasia": ["Ultra-Trail Australia (UTA)", "Ultra X Sri Lanka", "Everest Trail Race", "Gaoligong by UTMB", "La Ultra – The High", "Ultra-Trail Mt. Fuji"],
+        "Middle East": ["Ultra X Jordan"]
+    };
 
-  var regionSel = document.getElementById("region");
-  var raceSel = document.getElementById("race");
-  for (var a in regions) {
-    regionSel.options[regionSel.options.length] = new Option(a, a);
-  }
-  regionSel.onchange = function() {
-    //empty races
-    raceSel.length = 1;
-    //display correct values
-    var b = regions[this.value];
-    for (var i = 0; i < b.length; i++) {
-      raceSel.options[raceSel.options.length] = new Option(b[i], b[i]);
+    var regionSel = document.getElementById("region");
+    var raceSel = document.getElementById("race");
+    for (var a in regions) {
+        regionSel.options[regionSel.options.length] = new Option(a, a);
     }
-  };
+    regionSel.onchange = function () {
+        //empty races
+        raceSel.length = 1;
+        //display correct values
+        var b = regions[this.value];
+        for (var i = 0; i < b.length; i++) {
+            raceSel.options[raceSel.options.length] = new Option(b[i], b[i]);
+        }
+    };
 });
 
 /* --------------------------- RACE INFORMATION */
@@ -58,8 +58,8 @@ const races = [{
     website: "https://www.marathonmontblanc.fr/en/",
     lat: 45.91924995448426,
     lng: 6.865826926381162
-  },
-  {
+},
+{
     name: "Badwater 135",
     location: "US",
     distance: "217km",
@@ -70,8 +70,8 @@ const races = [{
     website: "https://www.badwater.com/",
     lat: 36.23131057832886,
     lng: -116.7660672234456
-  },
-  {
+},
+{
     name: "Eiger Ultra Trail",
     location: "Switzerland",
     distance: "101km",
@@ -82,8 +82,8 @@ const races = [{
     website: "https://www.eigerultratrail.ch/en/",
     lat: 46.6248811225897,
     lng: 8.04065060801369
-  },
-  {
+},
+{
     name: "Ultra X Jordan",
     location: "Wadi Rum Desert, Jordan",
     distance: "250km (5 days)",
@@ -94,8 +94,8 @@ const races = [{
     website: "https://ultra-x.co/jordan/",
     lat: 29.568430120523196,
     lng: 35.421942771293224
-  },
-  {
+},
+{
     name: "Ultra-Trail Australia (UTA)",
     location: "Australia",
     distance: "100km",
@@ -106,8 +106,8 @@ const races = [{
     website: "https://www.ultratrailaustralia.com.au/",
     lat: -33.72485458822233,
     lng: 150.2896891977
-  },
-  {
+},
+{
     name: "Comrades Marathon: The Ultimate Human Race",
     location: "South Africa",
     distance: "90km",
@@ -118,8 +118,8 @@ const races = [{
     website: "https://www.comrades.com/",
     lat: -29.625436894920185,
     lng: 30.3911381446702
-  },
-  {
+},
+{
     name: "Marathon des Sables",
     location: "Morocco",
     distance: "251km (6 days)",
@@ -130,8 +130,8 @@ const races = [{
     website: "https://ultra-x.co/jordan/",
     lat: 29.568430120523196,
     lng: 35.421942771293224
-  },
-  {
+},
+{
     name: "Western States Endurance Run",
     location: "Squaw Valley, California",
     distance: "161km",
@@ -142,8 +142,8 @@ const races = [{
     website: "https://www.wser.org/",
     lat: 39.19828932217277,
     lng: -120.22945680959677
-  },
-  {
+},
+{
     name: "Spartathlon",
     location: "Greece",
     distance: "246km",
@@ -154,8 +154,8 @@ const races = [{
     website: "https://www.spartathlon.gr/en/",
     lat: 37.97116015942636,
     lng: 23.726478760806234
-  },
-  {
+},
+{
     name: "Hardrock 100",
     location: "Silverton, Colorado",
     distance: "161km",
@@ -166,8 +166,8 @@ const races = [{
     website: "https://hardrock100.com/",
     lat: 37.81455666839844,
     lng: -107.66095105522486
-  },
-  {
+},
+{
     name: "Atacama Crossing",
     location: "Chile",
     distance: "250km (7 days)",
@@ -178,8 +178,8 @@ const races = [{
     website: "https://www.racingtheplanet.com/atacamacrossing",
     lat: -22.641471247821155,
     lng: -68.23951322441216
-  },
-  {
+},
+{
     name: "Ultra X 125 Azores",
     location: "São Miguel, Azores (Portugal)",
     distance: "125km (2 days)",
@@ -190,8 +190,8 @@ const races = [{
     website: "https://ultra-x.co/azores-125/",
     lat: 37.78405321344546,
     lng: -25.46215372290702
-  },
-  {
+},
+{
     name: "Ultra-Trail Mt. Fuji",
     location: "Japan",
     distance: "165km",
@@ -202,8 +202,8 @@ const races = [{
     website: "https://www.ultratrailmtfuji.com/en/",
     lat: 35.25476823897006,
     lng: 138.77502779776023
-  },
-  {
+},
+{
     name: "Ultra X Sri Lanka",
     location: "Sri Lanka",
     distance: "250km (5 days)",
@@ -214,8 +214,8 @@ const races = [{
     website: "https://ultra-x.co/sri-lanka/",
     lat: 6.440416108573715,
     lng: 80.8898559602463
-  },
-  {
+},
+{
     name: "Everest Trail Race",
     location: "Nepal",
     distance: "160km",
@@ -226,8 +226,8 @@ const races = [{
     website: "https://everesttrailrace.co.uk/",
     lat: 27.897826077486098,
     lng: 86.77899949092938
-  },
-  {
+},
+{
     name: "Gaoligong by UTMB",
     location: "China",
     distance: "165km",
@@ -238,8 +238,8 @@ const races = [{
     website: "https://utmbmontblanc.com/en/mag/177/",
     lat: 24.895611654987476,
     lng: 101.41101612057562
-  },
-  {
+},
+{
     name: "La Ultra – The High",
     location: "India",
     distance: "111km, 222km and 333km",
@@ -250,8 +250,8 @@ const races = [{
     website: "https://www.laultra.in/",
     lat: 34.68560707643709,
     lng: 77.56951945508497
-  },
-  {
+},
+{
     name: "Ultra-Trail Cape Town (UTCT)",
     location: "South Africa",
     distance: "100km",
@@ -262,8 +262,8 @@ const races = [{
     website: "https://www.ultratrailcapetown.com/",
     lat: -33.99856173756557,
     lng: 18.52682304879638
-  },
-  {
+},
+{
     name: "Transgrancanaria",
     location: "Gran Canaria",
     distance: "128km",
@@ -274,8 +274,8 @@ const races = [{
     website: "https://www.transgrancanaria.net/en/",
     lat: 28.1430109121253,
     lng: -15.433183894674064
-  },
-  {
+},
+{
     name: "Grand Raid de la Réunion",
     location: "Reunion Island",
     distance: "162km",
@@ -286,8 +286,8 @@ const races = [{
     website: "https://www.grandraid-reunion.com/english/",
     lat: -21.128707379080893,
     lng: 55.49155821596959
-  },
-  {
+},
+{
     name: "Salt Pans Ultra Marathon",
     location: "Botswana",
     distance: "100km (3 days)",
@@ -298,8 +298,8 @@ const races = [{
     website: "https://www.saltpansultra.com/",
     lat: -20.888589251981728,
     lng: 25.807206335046203
-  },
-  {
+},
+{
     name: "For Rangers",
     location: "Kenya",
     distance: "230km (6 days)",
@@ -310,8 +310,8 @@ const races = [{
     website: "https://www.forrangers.com/",
     lat: -1.4589891399784842,
     lng: 36.72916710925406
-  },
-  {
+},
+{
     name: "Leadville Trail 100",
     location: "Leadville, Colorado",
     distance: "161km",
@@ -322,8 +322,8 @@ const races = [{
     website: "https://www.leadvilleraceseries.com/run/leadvilletrail100run/",
     lat: 39.24804046161333,
     lng: -106.29690703101502
-  },
-  {
+},
+{
     name: "HURT100",
     location: "HO’ahu, Hawaii",
     distance: "161km",
@@ -334,8 +334,8 @@ const races = [{
     website: "https://hurt100.com/",
     lat: 21.330534236567033,
     lng: -157.88560073682214
-  },
-  {
+},
+{
     name: "Barkley Marathons",
     location: "Frozen Head State Park, Tennessee",
     distance: "160km",
@@ -346,8 +346,8 @@ const races = [{
     website: "No website",
     lat: 36.12701289587364,
     lng: -84.42118938506238
-  },
-  {
+},
+{
     name: "Grand to Grand",
     location: "Grand Canyon, Arizona",
     distance: "275km (7 days)",
@@ -358,8 +358,8 @@ const races = [{
     website: "https://g2gultra.com/",
     lat: 36.209288564527995,
     lng: -112.06013155254627
-  },
-  {
+},
+{
     name: "Transylvania 100k",
     location: "Romania",
     distance: "100km",
@@ -370,8 +370,8 @@ const races = [{
     website: "https://www.transylvania100k.com/",
     lat: 45.51442104915137,
     lng: 25.36883739832018
-  },
-  {
+},
+{
     name: "Mozart 100",
     location: "Austria",
     distance: "108km",
@@ -382,8 +382,8 @@ const races = [{
     website: "https://www.mozart100.com/en/",
     lat: 47.771922261894936,
     lng: 13.355654859237529
-  },
-  {
+},
+{
     name: "Fire & Ice Ultra",
     location: "Iceland",
     distance: "250km (6 days)",
@@ -394,8 +394,8 @@ const races = [{
     website: "https://www.extremeadventureraces.com/info/fireandiceultrarace/",
     lat: 64.78382483510778,
     lng: -17.206232472116614
-  },
-  {
+},
+{
     name: "UTMR (Ultra Tour Monte Rosa)",
     location: "Switzerland & Italy",
     distance: "170km",
@@ -406,8 +406,8 @@ const races = [{
     website: "https://www.ultratourmonterosa.com/",
     lat: 45.93684614020497,
     lng: 7.870457591860179
-  },
-  {
+},
+{
     name: "Tor des Géants",
     location: "Italy",
     distance: "330km",
@@ -418,8 +418,8 @@ const races = [{
     website: "https://www.tordesgeants.it/en/content/tor-des-g%C3%A9ants%C2%AE",
     lat: 45.79573652293625,
     lng: 6.974106667702274
-  },
-  {
+},
+{
     name: "The Jungle Ultra",
     location: "Peru",
     distance: "230km (5 days)",
@@ -430,8 +430,8 @@ const races = [{
     website: "https://beyondtheultimate.co.uk/ultra/jungle-ultra/#!/2021",
     lat: -12.042496026423258,
     lng: -71.72307911534153
-  },
-  {
+},
+{
     name: "Ushuaia by UTMB",
     location: "Argentina",
     distance: "130km",
@@ -442,8 +442,8 @@ const races = [{
     website: "https://utmbmontblanc.com/en/mag/101/",
     lat: -54.79872955158618,
     lng: -68.31413462470238
-  },
-  {
+},
+{
     name: "Brazil135+ Ultramarathon",
     location: "Brazil",
     distance: "217km",
@@ -454,8 +454,8 @@ const races = [{
     website: "http://www.brazil135.com.br/",
     lat: -21.97599949357952,
     lng: -46.78946941010511
-  },
-  {
+},
+{
     name: "Ultra Fiord",
     location: "Chile",
     distance: "136km (2 days)",
@@ -466,8 +466,8 @@ const races = [{
     website: "https://www.ultrafiord.com/mobile-home/",
     lat: -50.94121750338105,
     lng: -73.4058866778276
-  },
-  {
+},
+{
     name: "Chicamocha Canyon Race",
     location: "Colombia",
     distance: "160km",
@@ -478,21 +478,21 @@ const races = [{
     website: "https://chicamochacanyonrace.com/",
     lat: 6.557417843343337,
     lng: -73.13775240538115
-  },
+},
 ];
 
-$("#race").change(function() {
+$("#race").change(function () {
 
-  let selRace = document.getElementById("race").value;
+    let selRace = document.getElementById("race").value;
 
-  let race = races.find(race => race.name === selRace);
+    let race = races.find(race => race.name === selRace);
 
-  raceLocation(race.lat, race.lng, race.name);
+    raceLocation(race.lat, race.lng, race.name);
 
 
-// Add race information to race information section
-  $("#race-information").empty().append(
-    `<h2 class="race-information">${race.name}</h2>
+    // Add race information to race information section
+    $("#race-information").empty().append(
+        `<h2 class="race-information">${race.name}</h2>
         <p>${race.description}</p>
           <table id="table">
           <tr>
@@ -520,15 +520,13 @@ $("#race").change(function() {
               <td id="table-category-data"><a href="${race.website}" target="_blank">WEBSITE</a></td>
           </tr>
       </table>`
-  );
+    );
 });
 
 /* --------------------------- NEWSLETTER */
 
 // Clear form when submitted / closed
 
-$("#newsletter-form").on("hidden.bs.modal", function() {
-  $(this).find("newsletter-form").trigger("reset");
-})
-
-// form submission
+$("#newsletter-form").on("hidden.bs.modal", function () {
+    $(this).find("newsletter-form").trigger("reset");
+});

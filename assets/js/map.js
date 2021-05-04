@@ -145,7 +145,7 @@ function localClubs() {
 
     // Adapted from Google Maps API documentation https://developers.google.com/maps/documentation/javascript/geolocation
 
-    // Initialize variables
+    // Initialize map variables
     bounds = new google.maps.LatLngBounds();
     infoWindow = new google.maps.InfoWindow();
     currentInfoWindow = infoWindow;
@@ -201,11 +201,11 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
     currentInfoWindow = infoWindow;
 
     getLocalClubs(pos);
-
 }
 
 /* --------------------------- LOCAL RUNNING CLUBS SEARCH*/
 
+// Adapted from Google Maps API documentation https://developers.google.com/maps/documentation/javascript/geolocation
 function getLocalClubs(position) {
     let request = {
         location: position,
@@ -230,7 +230,8 @@ function localStores() {
     </div>`
     );
 
-    // Initialize variables
+    // Adapted from Google Maps API documentation https://developers.google.com/maps/documentation/javascript/geolocation
+    // Initialize map variables
     bounds = new google.maps.LatLngBounds();
     infoWindow = new google.maps.InfoWindow();
     currentInfoWindow = infoWindow;
@@ -290,6 +291,8 @@ function handleLocationError(browserHasGeolocation, infoWindow) {
 
 /* --------------------------- LOCAL SPORTS STORES SEARCH*/
 
+
+// Adapted from Google Maps API documentation https://developers.google.com/maps/documentation/javascript/geolocation
 function getLocalStores(position) {
     let request = {
         location: position,
@@ -304,7 +307,8 @@ function getLocalStores(position) {
 
 /* --------------------------- LOCAL SEARCH CALLBACK*/
 
-// Handle the results (up to 20) of the Nearby Search
+// Adapted from Google Maps API documentation https://developers.google.com/maps/documentation/javascript/geolocation
+// Return markers for 20 of the Nearby Search results
 function nearbyCallback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
         createMarkers(results);
@@ -313,6 +317,7 @@ function nearbyCallback(results, status) {
 
 /* --------------------------- CREATE MARKERS AND INFOWINDOWS*/
 
+// Adapted from Google Maps API documentation https://developers.google.com/maps/documentation/javascript/geolocation
 function createMarkers(places) {
     places.forEach(place => {
         let marker = new google.maps.Marker({
@@ -329,9 +334,7 @@ function createMarkers(places) {
                 ]
             };
 
-            /* Only fetch the details of a place when the user clicks on a marker.
-             * If we fetch the details for all place results as soon as we get
-             * the search response, we will hit API rate limits. */
+            // Fetch the details of a place when the user clicks on a marker.
             service.getDetails(request, (placeResult, status) => {
                 showDetails(placeResult, marker, status)
             });
@@ -385,5 +388,4 @@ function raceLocation(raceLat, raceLng, raceName) {
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.open(raceMap, marker);
     });
-
 }
