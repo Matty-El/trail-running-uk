@@ -87,15 +87,15 @@ The wireframes were developed using [Balsamiq](https://balsamiq.com/).
 After the initial design was finalised the following changes were made:
 
 -   Addition of a races section to enable the user to find information about races around the world.
--   Parallax scrolling to add some depth and interest to the website.
+-   Inclusion of user geolocation to auto-populate the map with local running clubs and sports stores.
 
 ### Surface
 
-Clean design with dark colour palette to link to the natural and outdoor aspect of trail running......
+Clean design with dark background and light text to provide good contrast. Dividing sections have a topographic background to link in to the off-road nature of trail running.
 
 #### Branding
 
-Decide whether to develop a Trail Running UK logo...
+A simple Trail Running UK logo was created using Canva.
 
 #### Colours
 
@@ -330,7 +330,7 @@ Comments have been included in the code for code that has been sourced and adapt
 ### Media
 
 -   All images, with the exception of the topography image below, were licensed for use from [Adobe Stock](https://stock.adobe.com/).
--   The topography background image was sourced as a free file from [Spoon Graphics](https://blog.spoongraphics.co.uk/).
+-   The topography image was sourced as a free file from [Spoon Graphics](https://blog.spoongraphics.co.uk/).
 
 ### Acknowledgements
 
