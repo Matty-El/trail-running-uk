@@ -292,11 +292,11 @@ The website has been tested using the Google Developer Tools Lighthouse feature 
 
 **Desktop:**
 
-![Performance 95%, Accessibility 97%, Best Practices 93%, SEO 100%](assets/images/readme/lighthouse.png)
+![Performance 93%, Accessibility 100%, Best Practices 93%, SEO 100%](testing-files/desktop-lighthouse-report.html)
 
 **Mobile:**
 
-![Performance 95%, Accessibility 97%, Best Practices 93%, SEO 100%](assets/images/readme/lighthouse.png)
+![Performance 63%, Accessibility 100%, Best Practices 93%, SEO 100%](testing-files/mobile-lighthouse-report.html)
 
 The performance score for mobile devices is sub-optimal and improvements will be required to improve performance in this area.
 
