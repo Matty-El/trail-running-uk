@@ -362,7 +362,7 @@ button.navbar-toggler {
 /* --------------------------- DIVIDER */
 
 #divider-image {
-  background: url("../images/topography-background.png");
+  background: url("../images/topography-background-tiny.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
