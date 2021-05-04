@@ -138,7 +138,7 @@ const races = [{
     elevation: "5,500m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "This 100 mile trail race was originally competed on horseback, until Gordy Ainsleigh attempted to complete the course on foot in under 24 hours. He proved it was possible and since his run thousands of other have travelled from all over the world to compete in this race. The cut off time is 30 hours to complete the route and the range in elevation means some miles are run on snow and others on scorching hot trails. This is a stunning race between Squaw Valley and Auburn which takes in the beauty of Emigrant Pass and the canyons of the California gold country.",
+    description: "This 100 mile trail race was originally competed on horseback, until Gordy Ainsleigh attempted to complete the course on foot in under 24 hours. He proved it was possible and since his run thousands of other have travelled from all over the world to compete in this race. The cut off time is 30 hours to complete the route and the range in elevation means some miles are run on snow and others on scorching hot trails. This is a stunning race between Squaw Valley and Auburn which takes in the beauty of Emigrant Pass and the canyons of California gold country.",
     website: "https://www.wser.org/",
     lat: 39.19828932217277,
     lng: -120.22945680959677
@@ -150,7 +150,7 @@ const races = [{
     elevation: "6,543m",
     terrain: "Road",
     difficulty: "Brutal",
-    description: "Spartathlon relives the story of Pheidippides, an ancient Athenian long distance runner who, in 490 BC (before the battle of Marathon), was sent to Sparta from Athens to seek help in the war between the Greeks and the Persians. According to the ancient Greek historian Herodotus, Pheidippides arrived in Sparta the day after his departure from Athens. The event was founded in 1984 and attracts runners from around the globe. The race is demanding because of the distance and also due to the cut-off requirements and weather conditions. Each of the 75 race check points has its own cut-off. Should a runner arrive later than the official closing time he or she will be eliminated from the race.",
+    description: "Spartathlon retraces the story of Pheidippides, an ancient Athenian long distance runner who, in 490 BC (before the battle of Marathon), was sent to Sparta from Athens to seek help in the war between the Greeks and the Persians. According to the ancient Greek historian Herodotus, Pheidippides arrived in Sparta the day after his departure from Athens. The event was founded in 1984 and attracts runners from around the globe. The race is demanding because of the distance and also due to the cut-off requirements and weather conditions. Each of the 75 race check points has its own cut-off. Should a runner arrive later than the official closing time they will be eliminated from the race.",
     website: "https://www.spartathlon.gr/en/",
     lat: 37.97116015942636,
     lng: 23.726478760806234
@@ -162,7 +162,7 @@ const races = [{
     elevation: "10,074",
     terrain: "Mountains",
     difficulty: "Hard",
-    description: "Hardrock 100 is a looped course of dirt trails and cross country running along the San Juan Range of the Rocky Mountains. With an elevation gain of more than 10,000m and 13 high points above 3,700m, it is a difficult race. The terrain is extremely rugged with steep scree climbing and descending, snow, river crossings and boulder fields. The average finish time is 40 hours and to complete the course, runners must kiss the infamous ‘Hardrock’ at the end. Designed to provide extreme challenges in altitude, steepness, and remoteness - mountaineering, wilderness survival and navigation skills are as important in this event as endurance.",
+    description: "Hardrock 100 is a looped course of dirt trails and cross country running along the San Juan Range of the Rocky Mountains. With an elevation gain of more than 10,000m and 13 points above 3,700m, it is a difficult race. The terrain is extremely rugged with steep scree climbing and descending, snow, river crossings and boulder fields. The average finish time is 40 hours and to complete the course, runners must kiss the infamous ‘Hardrock’ at the end. Designed to provide extreme challenges in altitude, steepness, and remoteness - mountaineering, wilderness survival and navigation skills are as important in this event as endurance.",
     website: "https://hardrock100.com/",
     lat: 37.81455666839844,
     lng: -107.66095105522486
@@ -174,7 +174,7 @@ const races = [{
     elevation: "1,683m",
     terrain: "Desert",
     difficulty: "Hard",
-    description: "This race takes competitors across the Atacama Desert in Chile, the driest place on earth. The route combines rough terrain an a harsh climate. Temperatures often reach 40°C and the average altitude is 2,500m. It is a self-supported race with competitors required to carry everything they need for the seven day event. Racers travel through canyons and valleys, along ancient Incan roads, through small villages, over sand dunes, salt flats and rivers, all surrounded by a range of stunning volcanoes.",
+    description: "This race takes competitors across the Atacama Desert in Chile, the driest place on earth. The route combines rough terrain in a very harsh climate. Temperatures often reach 40°C and the average altitude is 2,500m. It is a self-supported race with competitors required to carry everything they need for the seven day event. Racers travel through canyons and valleys, along ancient Incan roads, through small villages, over sand dunes, salt flats and rivers, all surrounded by a range of stunning volcanoes.",
     website: "https://www.racingtheplanet.com/atacamacrossing",
     lat: -22.641471247821155,
     lng: -68.23951322441216
@@ -222,7 +222,7 @@ const races = [{
     elevation: "28,000m",
     terrain: "Mountains",
     difficulty: "Hard",
-    description: "The Everest Trail Race ranks as one of the most unique multi-stage ultras in the world. It is a partially supported multi stage ultra marathon, with an altitude change of more than 28,000m. Runners carry their clothing and sleeping bag over the course with the race organisation providing food, accommodation and logistical support. This is an expensivce race to enter at £2,750 excluding flights.",
+    description: "The Everest Trail Race is one of the most unique multi-stage ultras in the world. It is a partially supported multi stage ultra marathon, with an altitude change of more than 28,000m. Runners carry their clothing and sleeping bag over the course with the race organisation providing food, accommodation and logistical support. This is an expensivce race to enter at £2,750 excluding flights.",
     website: "https://everesttrailrace.co.uk/",
     lat: 27.897826077486098,
     lng: 86.77899949092938
@@ -234,7 +234,7 @@ const races = [{
     elevation: "9,500m",
     terrain: "Mountains",
     difficulty: "Hard",
-    description: "Gaoligong by UTMB is run around one of most famous Taoist mountains in China in the Sichuan province and the gateway to Tibet. Finishing the 100 mile distance gives runners a guaranteed entry to the coveted UTMB.",
+    description: "Gaoligong by UTMB is run around one of most famous Taoist mountains in China in the Sichuan province, the gateway to Tibet. Finishing the 100 mile distance provides runners with a guaranteed entry to the Ultra-Trail du Mont-Blanc (UTMB).",
     website: "https://utmbmontblanc.com/en/mag/177/",
     lat: 24.895611654987476,
     lng: 101.41101612057562
@@ -246,7 +246,7 @@ const races = [{
     elevation: "26,670m",
     terrain: "Mountains",
     difficulty: "Brutal",
-    description: "This multi stage ultra marathon takes place on the Great Himalayan range of India and is possibly be the most brutal in the world. Most of the run is done with 50% less oxygen than at sea level, temperatures can vary from from -12 to 40°C and the highest point in the race is 5,359m above sea level. The race is non-stop with three categories of 111km, 222km and 333km.",
+    description: "This multi stage ultra marathon takes place on the Great Himalayan range of India and is possibly be the most brutal in the world. Most of the run is done with 50% less oxygen than at sea level, temperatures vary wildly from -12°C to 40°C and with the highest point in the 5,359m above sea level. The race is non-stop with three categories of 111km, 222km and 333km.",
     website: "https://www.laultra.in/",
     lat: 34.68560707643709,
     lng: 77.56951945508497
@@ -258,7 +258,7 @@ const races = [{
     elevation: "4,300m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "This route shows the very best of Cape Town and includes traversing sections of Table Mountain, Lion’s Head, Signal Hill, Orangekloof, Llandudno and Devils Peak. There is a tight cut off time of 17 hours for the 100km event. There are four race options from half marathon to 100km, so there is something for every level of runner.",
+    description: "This route deliverss the very best of what Cape Town has to offer and includes sections across Table Mountain, Lion’s Head, Signal Hill, Orangekloof, Llandudno and Devils Peak. There is a tight cut off time of 17 hours for the 100km event. There are four race options from half marathon to 100km, so there is something for every level of runner.",
     website: "https://www.ultratrailcapetown.com/",
     lat: -33.99856173756557,
     lng: 18.52682304879638
@@ -270,7 +270,7 @@ const races = [{
     elevation: "7,500m",
     terrain: "Trail",
     difficulty: "Intermediate",
-    description: "‘Transgran’ crosses the island of Gran Canaria from North to South and from coast to coast. The race includes a beach start at 11pm on the Friday night. The race started in 2003 with just 65 participants but over the years it has grown to more than 3,000 participants from more than 70 countries.",
+    description: "‘This race crosses the island of Gran Canaria from North to South and from coast to coast. The race includes a beach start at 11pm on the Friday night. The race started in 2003 with just 65 participants but over the years it has grown to more than 3,000 participants from more than 70 countries.",
     website: "https://www.transgrancanaria.net/en/",
     lat: 28.1430109121253,
     lng: -15.433183894674064
@@ -318,7 +318,7 @@ const races = [{
     elevation: "4,800m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "The Leadville Trail 100 follows the Colorado Trail and is a gruelling out-and-back route. The route combines technical terrain with long and steep climbs, the most challenging of which is the ascent of the 3,740m high Hope Pass. This race starts at 3,100m above sea level, with the elevation continuing up from there. Runners often battle symptoms of hypoxia, hyponatremia and hypothermia during this extremely challenging race.",
+    description: "The Leadville Trail 100 follows the Colorado Trail and is a gruelling out-and-back route. The route combines technical terrain with long and steep climbs, the most challenging of which is the ascent of the 3,740m high Hope Pass. This race starts at 3,100m above sea level, with the elevation continuing up from there. Runners quite often battle symptoms of hypoxia, hyponatremia and hypothermia during this extremely challenging race.",
     website: "https://www.leadvilleraceseries.com/run/leadvilletrail100run/",
     lat: 39.24804046161333,
     lng: -106.29690703101502
@@ -354,7 +354,7 @@ const races = [{
     elevation: "5,499m",
     terrain: "Trail",
     difficulty: "Intermediate",
-    description: "The Grand to Grand is a multi stage race starting from north rim of the Grand Canyon, and traversing a high desert landscape of sand dunes, canyons, buttes, mesas and hoodoos. Each day of the race is approximately marathon distance with a long 85km stage in the middle. The race is expensive to enter at $3,550 but competitors will enjoy amazing views, ancient geological rock formations and isolated canyons that few people will have ever seen.",
+    description: "The Grand to Grand is a multi stage race starting from north rim of the Grand Canyon, crossing a high desert landscape of sand dunes, canyons, buttes, mesas and hoodoos. Each day of the race is approximately marathon distance with a long 85km stage in the middle. The race is expensive to enter at $3,550 but competitors will enjoy amazing views, ancient geological rock formations and isolated canyons that few people will have ever seen.",
     website: "https://g2gultra.com/",
     lat: 36.209288564527995,
     lng: -112.06013155254627
@@ -366,7 +366,7 @@ const races = [{
     elevation: "5,000m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "This mountain ultra is run in one of the most beautiful regions of Eastern Europe. Runners will experience twisting single track paths, ancient forest trails, mountains and windswept ridges as they run through the Bucegi Range, ascending and descending thousands of metres before a returning to the Bran Castle for the finish. Bran Castle is the Transylvanian home of Dracula.",
+    description: "This mountain ultra is run in one of the most beautiful regions of Eastern Europe. Runners experience twisting single track paths, ancient forest trails, mountains and windswept ridges as they run through the Bucegi Range, ascending and descending thousands of metres before a returning to the Bran Castle for the finish. Bran Castle is the Transylvanian home of Dracula.",
     website: "https://www.transylvania100k.com/",
     lat: 45.51442104915137,
     lng: 25.36883739832018
@@ -378,7 +378,7 @@ const races = [{
     elevation: "5,000m",
     terrain: "Trail",
     difficulty: "Hard",
-    description: "The Mozart 100 is a race for those looking for value for money and to experience the beautiful scenery made famous in the film The Sound of Music. The race starts and finishes in Kapitelplatz Square. There are multiple race distances included in this event with the Mozart Marathon, the Mozart Light and the Mozart Half Marathon as options for those that do not wish to run the full 108km distance. This is a great race for those runners looking for a challenge that is slightly less demanding than some of the other ultra races.",
+    description: "The Mozart 100 is a race for those looking for value for money and to experience the beautiful scenery of the region that was made famous in the film The Sound of Music. The race starts and finishes in Kapitelplatz Square. There are multiple race distances included in this event with the Mozart Marathon, the Mozart Light and the Mozart Half Marathon as options for those that do not wish to run the full 108km distance. This is a great race for those runners looking for a challenge that is slightly less demanding than some of the other ultra races.",
     website: "https://www.mozart100.com/en/",
     lat: 47.771922261894936,
     lng: 13.355654859237529
@@ -438,7 +438,7 @@ const races = [{
     elevation: "7,100m",
     terrain: "Mixed",
     difficulty: "Hard",
-    description: "Ushuaia is seriously tough! There are four distances on offer (35km, 50km, 70km and 130km), combining forests, rocky trails, mountains, hills, glaciers, lakes, rivers, and wetlands. The race begins and ends in Ushuaia, and competitors cross eight mountain passages that connect the southern Andes which, due to their proximity to Antarctica, exhibit a similar climate to the Alps, averaging around 2,500-3,000m altitude.",
+    description: "Ushuaia is an extremely tough race. There are four different events - 35km, 50km, 70km and 130km, which combine forests, rocky trails, mountains, hills, glaciers, lakes, rivers, and wetlands. The race begins and ends in Ushuaia. Competitors cross eight mountain passes connecting the southern Andes. Due to their proximity to Antarctica the climate in the region is similar to that of the Alps with the peaks averaging around 2,500-3,000m in altitude.",
     website: "https://utmbmontblanc.com/en/mag/101/",
     lat: -54.79872955158618,
     lng: -68.31413462470238
@@ -450,7 +450,7 @@ const races = [{
     elevation: "9,000m",
     terrain: "Mixed",
     difficulty: "Brutal",
-    description: "The Brazil135+ Ultramarathon is considered the most difficult footrace in the country and is run on the hardest, most challenging segment of the Caminho da Fé (Path of Faith). The course consists of a combination of dirt roads, forest, waterfalls, asphalt, trails and railroad tracks. It remains a small event with entry limited to around 70 runners, many of whom are there to complete the solo event in under 48 hours.",
+    description: "The Brazil135+ Ultramarathon is considered the most difficult race in the country and is run on the most challenging section of the Caminho da Fé (Path of Faith). The terrain includes of a combination of dirt roads, forest, waterfalls, asphalt, trails and railroad tracks. This is a small event with entry limited to around 70 runners with many of the competitors entering to complete the solo event in under 48 hours.",
     website: "http://www.brazil135.com.br/",
     lat: -21.97599949357952,
     lng: -46.78946941010511

@@ -176,7 +176,11 @@ The following technologies have been used to complete the UX design, capture use
 
 ### Functionality Testing
 
-Each user story has been has been tested based on the acceptance criteria defined in the attached test plan. The user stories have been written from the perspective of the website owner and the website user. The website user stories are summarised below.
+Each user story has been has been tested based on the acceptance criteria defined in the attached test plan below. The user stories have been written from the perspective of the website owner and the website user.
+
+![User Acceptance Testing](testing-files/trail-running-uk-user-acceptance-criteria-testing.pdf).
+
+Results:
 
 ### User Story Testing Summary
 
@@ -252,7 +256,7 @@ Each user story has been has been tested based on the acceptance criteria define
 
     Results:
 
-    ![Responsiveness](testing-files/responsiveness-test-cycle-1.png)
+    ![Responsiveness](testing-files/trail-running-uk-responsiveness-testing.pdf)
 
 ### Code Validation
 
@@ -280,12 +284,11 @@ The site was tested across multiple devices and screen sizes, however, I did not
 
 Issues discovered during compatibility testing:
 
--   The parallax effect does not work on iOS devices so a decision was made to remove this so that there is a consitent experience across devices.
--   .......
+-   The parallax effect does not work on iPhones and iPads so a decision was made to remove this so that there is a consitent experience across devices.
 
 #### Performance, Accessibility, Best Practice and SEO Testing
 
-The website has been tested using the Google Developer Tools Lighthouse feature for both mobile and desktop.
+The website has been tested using the Google Developer Tools Lighthouse feature for both mobile and desktop. Performance issues were identified with both desktop and particularly mobile performance - these issues will need to be addressed in future. 
 
 **Desktop:**
 
@@ -294,6 +297,8 @@ The website has been tested using the Google Developer Tools Lighthouse feature 
 **Mobile:**
 
 ![Performance 95%, Accessibility 97%, Best Practices 93%, SEO 100%](assets/images/readme/lighthouse.png)
+
+The performance score for mobile devices is sub-optimal and improvements will be required to improve performance in this area.
 
 ### Deployment
 
