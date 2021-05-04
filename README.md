@@ -178,7 +178,7 @@ The following technologies have been used to complete the UX design, capture use
 
 Each user story has been has been tested based on the acceptance criteria defined in the attached test plan below. The user stories have been written from the perspective of the website owner and the website user.
 
-![User Acceptance Testing](testing-files/trail-running-uk-user-acceptance-criteria-testing.pdf).
+[User Acceptance Testing](https://matty-el.github.io/trail-running-uk/testing-files/trail-running-uk-user-acceptance-criteria-testing.pdf).
 
 Results:
 
@@ -256,7 +256,7 @@ Results:
 
     Results:
 
-    ![Responsiveness](testing-files/trail-running-uk-responsiveness-testing.pdf)
+    [Responsiveness](https://matty-el.github.io/trail-running-uk/testing-files/trail-running-uk-responsiveness-testing.pdf).
 
 ### Code Validation
 
@@ -292,11 +292,12 @@ The website has been tested using the Google Developer Tools Lighthouse feature 
 
 **Desktop:**
 
-[Performance 93%, Accessibility 100%, Best Practices 93%, SEO 100%](testing-files/desktop-lighthouse-report.html)
+[Performance 93%, Accessibility 100%, Best Practices 93%, SEO 100%](https://matty-el.github.io/trail-running-uk/testing-files/desktop-lighthouse-report.html).
+
 
 **Mobile:**
 
-[Performance 63%, Accessibility 100%, Best Practices 93%, SEO 100%](testing-files/mobile-lighthouse-report.html)
+[Performance 63%, Accessibility 100%, Best Practices 93%, SEO 100%](https://matty-el.github.io/trail-running-uk/testing-files/mobile-lighthouse-report.html).
 
 The performance score for mobile devices is sub-optimal and improvements will be required to improve performance in this area.
 
