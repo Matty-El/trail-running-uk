@@ -96,7 +96,7 @@ button.navbar-toggler {
 /* --------------------------- HERO IMAGE AND SECTION */
 
 #hero-image {
-  background: url("../images/hero-medium-tiny.jpeg");
+  background: url("../images/hero-medium.jpeg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -182,7 +182,7 @@ button.navbar-toggler {
 /* --------------------------- GET STARTED SECTION */
 
 #map-image {
-  background: url("../images/topography-background-tiny.png");
+  background: url("../images/topography-background.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -273,7 +273,7 @@ button.navbar-toggler {
 /* --------------------------- NEWSLETTER FORM */
 
 #races-image {
-  background: url("../images/topography-background-tiny.png");
+  background: url("../images/topography-background.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -359,10 +359,14 @@ button.navbar-toggler {
   margin-left: 0px;
 }
 
+#thankYouModal {
+  text-align: center;
+}
+
 /* --------------------------- DIVIDER */
 
 #divider-image {
-  background: url("../images/topography-background-tiny.png");
+  background: url("../images/topography-background.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
