@@ -153,7 +153,7 @@ The following technologies have been used to complete the UX design, capture use
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5) - used for the structure and content of the Trail Running UK website.
 -   [CSS3](https://en.wikipedia.org/wiki/CSS) - used to style the Trail Running UK website.
--   [JavaScript](https://www.javascript.com/) / jQuery](https://jquery.com/)- used for scripts for the why trail running and races sections of the Trail Running UK website and for the newsletter.
+-   [JavaScript](https://www.javascript.com/) / [jQuery](https://jquery.com/)- used for scripts for the why trail running and races sections of the Trail Running UK website and for the newsletter.
 
 ### Frameworks - Tools - Libraries
 
