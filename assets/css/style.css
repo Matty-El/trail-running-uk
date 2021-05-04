@@ -96,7 +96,7 @@ button.navbar-toggler {
 /* --------------------------- HERO IMAGE AND SECTION */
 
 #hero-image {
-  background: url("../images/hero-medium.jpeg");
+  background: url("../images/hero-medium-tiny.jpeg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -182,7 +182,7 @@ button.navbar-toggler {
 /* --------------------------- GET STARTED SECTION */
 
 #map-image {
-  background: url("../images/topography-background.png");
+  background: url("../images/topography-background-tiny.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -273,7 +273,7 @@ button.navbar-toggler {
 /* --------------------------- NEWSLETTER FORM */
 
 #races-image {
-  background: url("../images/topography-background.png");
+  background: url("../images/topography-background-tiny.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
