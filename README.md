@@ -166,7 +166,7 @@ The following technologies have been used to complete the UX design, capture use
 -   [Tiny PNG](https://tinypng.com/) - for the compression of images for all pages of the website.
 -   [Canva](https://canva.com/) - used for the design of the Trail Running UK website logo.
 -   [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorials) - used to embed the get started section and races section maps in the website.
--   [Google Maps Places](https://developers.google.com/maps/documentation/places/web-service/overview) - used to find places local to the user for the local running clubs and local sports stores.
+-   [Google Maps Places API](https://developers.google.com/maps/documentation/places/web-service/overview) - used to find places local to the user for the local running clubs and local sports stores.
 -   [Beautify Tools](https://beautifytools.com/javascript-validator.php) - for the validation of the JavaScript code.
 -   [Markup validation service](https://validator.w3.org/) - for the validation of HTML5 code.
 -   [CSS validation service](https://jigsaw.w3.org/css-validator/) - for the validation of the CSS3 code.
