@@ -151,9 +151,9 @@ The following technologies have been used to complete the UX design, capture use
 
 ### Languages
 
--   [HTML5](https://en.wikipedia.org/wiki/HTML5) - used for the structure and content of the Urban Paws website.
--   [CSS3](https://en.wikipedia.org/wiki/CSS) - used to style the Urban Paws website.
--   [JavaScript](https://www.javascript.com/) / [jQuery](https://jquery.com/)- used for scripts for the why trail running and races sections of the website and for the newsletter.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5) - used for the structure and content of the Trail Running UK website.
+-   [CSS3](https://en.wikipedia.org/wiki/CSS) - used to style the Trail Running UK website.
+-   [JavaScript](https://www.javascript.com/) / jQuery](https://jquery.com/)- used for scripts for the why trail running and races sections of the Trail Running UK website and for the newsletter.
 
 ### Frameworks - Tools - Libraries
 
@@ -165,6 +165,8 @@ The following technologies have been used to complete the UX design, capture use
 -   [Balsamiq](https://balsamiq.com/) - utilised for the development of the website wireframes.
 -   [Tiny PNG](https://tinypng.com/) - for the compression of images for all pages of the website.
 -   [Canva](https://canva.com/) - used for the design of the Trail Running UK website logo.
+-   [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorials) - used to embed the get started section and races section maps in the website.
+-   [Google Maps Places](https://developers.google.com/maps/documentation/places/web-service/overview) - used to find places local to the user for the local running clubs and local sports stores.
 -   [Beautify Tools](https://beautifytools.com/javascript-validator.php) - for the validation of the JavaScript code.
 -   [Markup validation service](https://validator.w3.org/) - for the validation of HTML5 code.
 -   [CSS validation service](https://jigsaw.w3.org/css-validator/) - for the validation of the CSS3 code.
@@ -323,7 +325,7 @@ To clone this project from GitHub.
 
 ### Content
 
-All text content included in the Urban Paws website is my own.
+All text content included in the Urban Paws website is my own with race information sourced and adapted from https://ultra-x.co/best-and-most-beautiful-ultra-marathons-in-the-world/.
 
 Comments have been included in the code for code that has been sourced and adapted for this website.
 

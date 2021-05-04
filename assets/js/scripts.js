@@ -525,6 +525,7 @@ $("#race").change(function () {
 
 /* --------------------------- NEWSLETTER */
 
+// Adapted from https://stackoverflow.com/questions/26863003/how-to-reset-the-bootstrap-modal-when-it-gets-closed-and-open-it-fresh-again
 // Clear form when submitted / closed
 
 $("#newsletter-form").on("hidden.bs.modal", function () {
