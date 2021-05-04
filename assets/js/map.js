@@ -1,8 +1,8 @@
 $(document).ready(function () {
-    document.getElementById("best-trails").addEventListener("click", initMap);
-    document.getElementById("local-stores").addEventListener("click", localStores);
-    document.getElementById("local-clubs").addEventListener("click", localClubs);
-})
+    document.getElementById('best-trails').addEventListener('click', initMap);
+    document.getElementById('local-stores').addEventListener('click', localStores);
+    document.getElementById('local-clubs').addEventListener('click', localClubs);
+});
 
 /* --------------------------- REGIONAL TRAIL RUNNING LOCATIONS */
 
@@ -78,7 +78,7 @@ var map, raceMap;
 function initMap() {
 
     // Empty array to avoid duplication of markers when click The Best Trails button again
-    $("#information").empty().append(
+    $('#information').empty().append(
         `<div>
       <h2>The Best Trails in the UK & Ireland</h2>
       <p>The UK has some of the best trails running locations in the world. From the rugged and stunning trails of the Lake District to the coastal paths of the South East there is something for everyone.  Whether you prefer to run in the mountains, by the sea, or through your favourite woodland you are spoilt for choice, and being a relatively small country these places are accessible to all.</p>
@@ -87,7 +87,7 @@ function initMap() {
     </div>`
     );
 
-    $("#race-information").empty().append(
+    $('#race-information').empty().append(
         `<div>
       <h2>Races Around the World</h2>
       <p>Due to the explosion in popularity of trail running over the past 15 years more races are added to the race calendar every year. There are some incredible events all over the world.</p>
@@ -99,11 +99,11 @@ function initMap() {
     var maps = {
         zoom: 5,
         center: new google.maps.LatLng(53.365816267881975, -1.4922523393807863),
-    }
+    };
 
-    map = new google.maps.Map(document.getElementById("map"), maps);
+    map = new google.maps.Map(document.getElementById('map'), maps);
 
-    raceMap = new google.maps.Map(document.getElementById("race-map"), maps);
+    raceMap = new google.maps.Map(document.getElementById('race-map'), maps);
 
     var infowindow = new google.maps.InfoWindow();
     var markers = [];
@@ -125,23 +125,21 @@ function initMap() {
             return function () {
                 infowindow.setContent(locations[i][1]);
                 infowindow.open(map, marker);
-            }
+            };
         })(marker, i));
     }
 }
 
 /* --------------------------- LOCAL RUNNING CLUBS */
 
-let pos, bounds, infoWindow, currentInfoWindow, service, infoPane;
+let pos, bounds, infoWindow, currentInfoWindow, service;
 
 function localClubs() {
 
-    $("#information").empty().append(
+    $('#information').empty().append(
         `<div>
       <h2>Running Clubs</h2>
-      <p>Joining a club is one of the best things you can do to progress your running, so with this in mind, we've compiled a list of the reasons why:
-      You are your environment.  By joining a club and surrounding yourself with experienced, enthusiastic people, you're more likely to run long-term, instead of depending solely on your own motivation.  Seeing what others who started off just like you have achieved will inspire you to keep training.
-      Running clubs will encourage you to vary your training. Clubs usually work with coaches and long term members to organise different sessions; e.g. Monday night – trail running, Tuesday night – medium length run, Thursday night – speed work, Sunday morning – long run.  Training by yourself means it's easy to get in a rut of the same routes at the same old pace – inevitably your running progress will plateau unless you change it up a bit.</p>
+      <p><br>Joining a club is one of the best things you can do to progress with your running. You are your environment. Joining a club and surrounding yourself with experienced, enthusiastic runners, you're more likely to run long-term instead of relying solely on your own motivation. Seeing what others have achieved will provide you with the inspiration to keep training. <p>Running with a club will encourage you to vary your training which will significantly speed your progress. Clubs quite often work with coaches and established members to organise different types of sessions: e.g. Monday night – interval sessions / speedwork, Tuesday night – trail run, Thursday night – medium length run, Saturday – long run.</p><p>Training can be great fun especially when you have the support and guidance from other enthusiastic club members.</p>
     </div>`
     );
 
@@ -149,7 +147,7 @@ function localClubs() {
 
     // Initialize variables
     bounds = new google.maps.LatLngBounds();
-    infoWindow = new google.maps.InfoWindow;
+    infoWindow = new google.maps.InfoWindow();
     currentInfoWindow = infoWindow;
 
     // Try HTML5 geolocation
@@ -223,10 +221,10 @@ function getLocalClubs(position) {
 
 function localStores() {
 
-    $("#information").empty().append(
+    $('#information').empty().append(
         `<div>
       <h2>Good Sports Stores</h2>
-      <p>You don't need much gear to start running.  However, a good pair of running shoes is essential and will ensure you get the best from your running and remain injury free.</p>
+      <p><br>You don't need much gear to start running.  However, a good pair of running shoes is essential and will ensure you get the best from your running and remain injury free.</p>
       <p>The best thing to do is to head down to your local friendly running shop and get some advice on the best shoes for you.  Everyone is different and finding the running shoes that are best suited to you will make your experience all the better</p>
       <p>Find the right shoes, throw on a t-shirt and some shorts and head out onto the trails to explore.</p>
     </div>`
@@ -234,7 +232,7 @@ function localStores() {
 
     // Initialize variables
     bounds = new google.maps.LatLngBounds();
-    infoWindow = new google.maps.InfoWindow;
+    infoWindow = new google.maps.InfoWindow();
     currentInfoWindow = infoWindow;
 
     // Try HTML5 geolocation
