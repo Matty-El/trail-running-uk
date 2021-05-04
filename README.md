@@ -91,7 +91,7 @@ After the initial design was finalised the following changes were made:
 
 ### Surface
 
-Clean design with dark background and light text to provide good contrast. Dividing sections have a topographic background to link in to the off-road nature of trail running.
+Clean design with dark background and light text to provide good contrast. Dividing sections have a topographic background to link into the off-road nature of trail running.
 
 #### Branding
 
@@ -165,7 +165,7 @@ The following technologies have been used to complete the UX design, capture use
 -   [Balsamiq](https://balsamiq.com/) - utilised for the development of the website wireframes.
 -   [Tiny PNG](https://tinypng.com/) - for the compression of images for all pages of the website.
 -   [Canva](https://canva.com/) - used for the design of the Trail Running UK website logo.
--   [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorials) - used to embed the get started section and races section maps in the website.
+-   [Google Maps API](https://developers.google.com/maps/documentation/javascript/tutorials) - used to embed the get started section and races section maps on the website.
 -   [Google Maps Places API](https://developers.google.com/maps/documentation/places/web-service/overview) - used to find places local to the user for the local running clubs and local sports stores.
 -   [Beautify Tools](https://beautifytools.com/javascript-validator.php) - for the validation of the JavaScript code.
 -   [Markup validation service](https://validator.w3.org/) - for the validation of HTML5 code.
@@ -176,7 +176,7 @@ The following technologies have been used to complete the UX design, capture use
 
 ### Functionality Testing
 
-Each user story has been has been tested based on the acceptance criteria defined in the attached test plan below. The user stories have been written from the perspective of the website owner and the website user.
+Each user story has been tested based on the acceptance criteria defined in the attached test plan below. The user stories have been written from the perspective of the website owner and the website user.
 
 [User Acceptance Testing](https://matty-el.github.io/trail-running-uk/testing-files/trail-running-uk-user-acceptance-criteria-testing.pdf).
 
@@ -195,7 +195,7 @@ Results:
 -   The website is divided into three main sections 'Why Trail Running', 'Get Started' and 'Races'. The user can scroll down to each section or use the navigation links.
 -   On clicking the 'Why Trail Running' menu link the page smooth scrolls to the carousel section. Back and advance icons are visible on the carousel as are buttons that allows the user to select a specific image. On clicking the advance icon the image advances to the next slide and on clicking the back icon the image moves to the previous slide. On selecting an image button a different image is selected corresponding to the carousel sequence.
 -   On clicking the 'Get Started' menu link the page smooth scrolls to the 'Get Started' section. Introductory text is displayed with a brief introduction to trail running in the UK and the map is populated with markers and clusters showing the best trail running sections around the UK and Ireland. Three buttons are visible 'THE BEST TRAILS', 'LOCAL RUNNING CLUBS' and 'LOCAL SPORTS STORES'.
--   On clicking the 'Races' menu link the page smooth scrolls to the Races section. Introductory text is displayed and a map is displayed centred on the UK. Dropdown menus are visible for the selection of a region and a race and on selecting a race information about that race is displayed along with a website link and a race location marker is populated on the map.
+-   On clicking the 'Races' menu link the page smooth scrolls to the Races section. Introductory text is displayed, and a map is displayed centred on the UK. Dropdown menus are visible for the selection of a region and a race and on selecting a race information about that race is displayed along with a website link and a race location marker is populated on the map.
 -   On scrolling to the bottom of the page the user is presented with social media icons and copyright text.
 
 **As a user, I want to find out more about trail running and it's benefits so that I can see if it is a sport I would like to participate in.**
@@ -232,7 +232,7 @@ Results:
 **As a user, I want to find information about races around the world so that I can decide if i want to enter a race.**
 
 -   On clicking the 'Races' menu link the page smooth scrolls to the Races section. Introductory text is displayed and a map is displayed centred on the UK.
--   Dropdown menus are visible fo the selection of a region and a race to populate details about the race.
+-   Dropdown menus are visible for the selection of a region and a race to populate details about the race.
 -   When the user selects a region the 'Select a race' dropdown is populated with races in that region.
 -   On selecting a race the information section is populated with information relating to the races selected.
 -   On selecting a race the map is centred on the location of the race with a marker visible in on the map.
@@ -252,11 +252,11 @@ Results:
 
 ### Responsiveness
 
-    The website was tested for responsiveness using [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).
+The website was tested for responsiveness using [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) and [Responsive Design Checker](https://www.responsivedesignchecker.com/).
 
-    Results:
+Results:
 
-    [Responsiveness](https://matty-el.github.io/trail-running-uk/testing-files/trail-running-uk-responsiveness-testing.pdf).
+[Responsiveness](https://matty-el.github.io/trail-running-uk/testing-files/trail-running-uk-responsiveness-testing.pdf).
 
 ### Code Validation
 
@@ -280,15 +280,15 @@ The validator did not highlight any significant errors.
 
 ### Compatibility Testing
 
-The site was tested across multiple devices and screen sizes, however, I did not have access to android phones or tablets to fully test the functionality on these devices. For pcs the site was tested across multiple screen sizes and all expected functionality worked with no specific issues.
+The site was tested across multiple devices and screen sizes and all expected functionality worked with some minor issues detailed below.
 
 Issues discovered during compatibility testing:
 
--   The parallax effect does not work on iPhones and iPads so a decision was made to remove this so that there is a consitent experience across devices.
+-   The parallax effect does not work on iPhones and iPads so a decision was made to remove this so that there is a consistent experience across devices.
 
 #### Performance, Accessibility, Best Practice and SEO Testing
 
-The website has been tested using the Google Developer Tools Lighthouse feature for both mobile and desktop. Performance issues were identified with both desktop and particularly mobile performance - these issues will need to be addressed in future. 
+The website has been tested using the Google Developer Tools Lighthouse feature for both mobile and desktop. Performance issues were identified with desktop and particularly mobile performance - these issues will need to be addressed in future. 
 
 **Desktop:**
 
@@ -308,7 +308,7 @@ The Trail Running UK project is hosted on GitHub Pages.
 **To deploy the project on GitHub**
 
 1.  Navigate to the menu at the top of the project repository on GitHub and select **Settings**.
-2.  Select the **Pages** section on the left hand menu.
+2.  Select the **Pages** section on the left-hand menu.
 3.  Click on the dropdown menu under **Source** and select **master** branch.
 4.  Ensure that the folder selected is the **(root)** folder.
 5.  Click the **Save** button.
@@ -331,7 +331,7 @@ To clone this project from GitHub.
 
 ### Content
 
-All text content included in the Urban Paws website is my own with race information sourced and adapted from https://ultra-x.co/best-and-most-beautiful-ultra-marathons-in-the-world/.
+All text content included in the Urban Paws website is my own with race information researched from https://ultra-x.co/best-and-most-beautiful-ultra-marathons-in-the-world/.
 
 Comments have been included in the code for code that has been sourced and adapted for this website.
 
